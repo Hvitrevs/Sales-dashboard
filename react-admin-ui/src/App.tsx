@@ -21,11 +21,9 @@ function App() {
       element: <Products />,
     },
   ]);
-
-
-  return (
-    <div><Home /></div>
-  )
+  
+  return <RouterProvider router={router} />;
+  
 }
 
-export default App
+export default App;
