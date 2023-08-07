@@ -5,6 +5,8 @@ import Products from "./pages/products/Products";
 import Navbar from "./components/navbar/Navbar";
 import Menu from "./components/menu/Menu";
 import Footer from "./components/footer/Footer";
+import Login from "./pages/login/Login";
+
 
 
 function App() {
@@ -44,6 +46,11 @@ function App() {
           element: <Products />
         },
       ]
+    },
+    // login configurations bellow
+    {
+      path:"/login",
+      element: <Login />,
     },
   ]);
   
