@@ -1,3 +1,19 @@
 .footer {
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-top: 0.08rem solid rgba(175, 182, 234, 0.604);
+
+    span{
+
+        &:first-child{
+            font-weight: 700;
+        }
+        &:last-child{
+            font-size: 0.8rem;
+        }
+    }
 }
