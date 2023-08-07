@@ -5,6 +5,15 @@ import Products from "./pages/products/Products";
 
 
 function App() {
+
+  const Layout = () => {
+    return (
+      <div className="main">
+        
+      </div>
+    )
+  }
+
   const router = createBrowserRouter([
     {
       path: "/",
