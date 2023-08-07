@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='logo'>
-        <img src='logo1.svg' alt='' className='logo' />
+        <a className='line'>|||</a>
         <span>DASHBOARD</span>
       </div>
       <div className='icons'>
