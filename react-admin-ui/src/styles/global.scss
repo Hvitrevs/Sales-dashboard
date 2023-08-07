@@ -1,3 +1,6 @@
+@import "./variables.scss";
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +10,13 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.main {
+  color: $main-color;
+  font-family: "Inter", sans-serif;
+  background-color: $main-bg;
+}
+.container {
+  display:flex ;
 }
