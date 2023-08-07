@@ -1,11 +1,39 @@
 .navbar {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
     
-}
-.logo {
-    padding-top: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    width: 12%;
-    height: 12%;
-    
+
+    .logo {
+        
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        width: 12%;
+        height: 12%;
+        
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img{
+                width: 27px;
+                height: 27px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+        }
+    }
 }
