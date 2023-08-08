@@ -16,7 +16,7 @@
 
     .title{
         font-size: 0.7rem;
-        font-weight: 200;
+        font-weight: 300;
         color: hsl(240, 22%, 60%);
         
 
@@ -25,19 +25,16 @@
     .listItem{
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
         padding: 1rem;
         border-radius: 13px;
 
+
+    
         &:hover{
-            text-shadow: 2px 3px 3px  hsl(240, 58%, 54%);
-        }
+            background-image: linear-gradient(to bottom, hsl(240, 42%, 18%),hsla(240, 30%, 17%, 0.056) ) ;
 
-
-
-        &:hover{
-            background-image: linear-gradient(to bottom, hsl(240, 36%, 19%),hsla(240, 30%, 17%, 0.056) ) ;
-
+        
         }
     }
 }
