@@ -9,11 +9,30 @@
         padding: 1rem;
         border-radius: 1rem;
         background-image: linear-gradient(to bottom, hsla(240, 41%, 18%, 0.531),hsla(240, 30%, 17%, 0.056) ) ;
+        opacity: 50%;
 
 
         &:hover {
-            box-shadow: 0 0 20px hsla(240, 44%, 31%, 0.531),
+            box-shadow: 0 0 20px hsla(240, 100%, 65%, 0.06);
+            opacity: 100%;
+
+
             }
+    }
+
+    .box1{
+        grid-column: span 1;
+        grid-row: span 3;
+    }
+
+    .box4{
+        grid-column: span 1;
+        grid-row: span 3;
+    }
+
+    .box7{
+        grid-column: span 2;
+        grid-row: span 2;
     }
 
         
