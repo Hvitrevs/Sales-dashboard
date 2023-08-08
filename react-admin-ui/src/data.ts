@@ -1,11 +1,11 @@
 export const menu = [
     {
       id: 1,
-      title: "main",
+      title: "MAIN",
       listItems: [
         {
           id: 1,
-          title: "Homepage",
+          title: "Home",
           url: "/",
           icon: "home.svg",
         },
@@ -19,7 +19,7 @@ export const menu = [
     },
     {
       id: 2,
-      title: "lists",
+      title: "LIST",
       listItems: [
         {
           id: 1,
@@ -49,7 +49,7 @@ export const menu = [
     },
     {
       id: 3,
-      title: "general",
+      title: "OFFICE",
       listItems: [
         {
           id: 1,
@@ -79,7 +79,7 @@ export const menu = [
     },
     {
       id: 4,
-      title: "Maintenance",
+      title: "ADVANCED",
       listItems: [
         {
           id: 1,
@@ -89,7 +89,7 @@ export const menu = [
         },
         {
           id: 2,
-          title: "Backups",
+          title: "Backup",
           url: "/",
           icon: "backup.svg",
         },
@@ -97,7 +97,7 @@ export const menu = [
     },
     {
       id: 5,
-      title: "analytics",
+      title: "DATA",
       listItems: [
         {
           id: 1,
