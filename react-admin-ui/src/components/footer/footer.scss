@@ -13,7 +13,20 @@
             font-weight: 700;
         }
         &:last-child{
-            font-size: 0.8rem;
+            font-size: 0.7rem;
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column; 
+      align-items: flex-start; 
+      padding: 0.6rem; 
+      font-size: xx-small;
+    }
+  
+    .footer span {
+      margin-bottom: 0.7rem; 
+      
+    }
+  }
