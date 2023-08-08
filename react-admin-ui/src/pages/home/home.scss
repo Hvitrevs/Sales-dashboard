@@ -3,10 +3,18 @@
     gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(180px, auto);
+    
 
     .box{
         padding: 1rem;
         border-radius: 1rem;
         background-image: linear-gradient(to bottom, hsla(240, 41%, 18%, 0.531),hsla(240, 30%, 17%, 0.056) ) ;
+
+
+        &:hover {
+            box-shadow: 0 0 20px hsla(240, 44%, 31%, 0.531),
+            }
     }
+
+        
 }
