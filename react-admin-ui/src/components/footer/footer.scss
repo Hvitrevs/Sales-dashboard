@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .footer {
     display: flex;
     align-items: center;
@@ -5,7 +7,9 @@
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    border-top: 0.08rem solid rgba(175, 182, 234, 0.226);
+    border-top: 2px solid $soft-bg;
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
 
     span{
 

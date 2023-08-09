@@ -40,8 +40,9 @@ a {
 .menuContainer {
 
   width: 250px;
-  padding: 8px 15px;
+  padding: 3px 15px;
   border-right: 2px solid $soft-bg;
+  margin-bottom: 0.9rem;
   
   @media screen and (max-width: 768pxx) {
     margin-left: -2rem;
