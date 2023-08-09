@@ -1,3 +1,63 @@
 .topBox {
+
+
+    h1{
+
+        margin-bottom: 1.6rem;
+    }
+
+    .list {
+
+        .listItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.3rem;
+
+            &:hover{
+                background-image: linear-gradient(to bottom, hsla(240, 20%, 50%, 0.138),hsla(240, 30%, 17%, 0.056) ) ;
     
+            
+            }
+
+
+
+            .user {
+
+                display: flex;
+                gap: 1rem;
+
+                img{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .userTexts{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+
+
+
+                    .username{
+                        margin-left: 0.6rem;
+                        font-size: 0.9rem;
+                        font-weight: 300;
+                        color: hsl(240, 42%, 83%);
+                    }
+
+
+                    .email{
+                        margin-left: 0.6rem;
+                        font-size: 0.9rem;
+                        font-weight: 300;
+                        color: hsl(240, 22%, 60%);                        
+                    }
+                
+                }
+            }
+        }
+    }
 }
