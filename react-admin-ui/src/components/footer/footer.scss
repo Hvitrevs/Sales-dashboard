@@ -1,23 +1,30 @@
 @import "../../styles/variables.scss";
 
 .footer {
+    width: full;
+    height: full;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 1rem;
+    padding-bottom: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    border-top: 2px solid $soft-bg;
+    border-top: 2px solid hsla(240, 24%, 37%, 0.157);
     margin-left: 0.9rem;
     margin-right: 0.9rem;
+
+
 
     span{
 
         &:first-child{
             font-weight: 700;
+            color: hsla(240, 29%, 69%, 0.382);
         }
         &:last-child{
             font-size: 0.7rem;
+            color: hsla(240, 29%, 69%, 0.497);
         }
     }
 }

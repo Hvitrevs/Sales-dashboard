@@ -1,11 +1,13 @@
 @import "./variables.scss";
 
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: $main-bg;
+  
+
 }
 
 a {
@@ -18,10 +20,17 @@ a {
   font-family: "Inter", sans-serif;
   letter-spacing: 0.15rem;
   color: $main-color;
+  // background-color: $main-bg;
+  // background-image:
+  //   radial-gradient(circle at bottom right,hsla(17, 71%, 20%, 0.623) ,30%, transparent),
+  //   radial-gradient(circle at top left,hsl(183, 61%, 15%) , transparent) ;
 
+
+  background-image: url('./bg-img.svg');
+  background-size: cover;
+  
 
 }
-
 @media screen and (max-width: 768px) {
   .main {
       flex-direction: column;
@@ -41,7 +50,7 @@ a {
 
   width: 250px;
   padding: 3px 15px;
-  border-right: 2px solid $soft-bg;
+  border-right: 2px solid  hsla(240, 24%, 37%, 0.157);
   margin-bottom: 0.9rem;
   
   @media screen and (max-width: 768pxx) {
