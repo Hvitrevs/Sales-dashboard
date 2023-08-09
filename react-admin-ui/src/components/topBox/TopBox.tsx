@@ -1,8 +1,8 @@
-
+import './topBox.scss'
 
 const TopBox = () => {
   return (
-    <div>TopBox</div>
+    <div className='topBox'>TopBox</div>
   )
 }
 
