@@ -73,9 +73,9 @@ const ChartBox = () => {
                   bottom: 0,
                 }}
               >
-                <CartesianGrid strokeDasharray=" 1 1" />
+                
 
-                <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                <Line type="monotone" dataKey="uv" stroke="#ff44c1" />
               </LineChart>
             </ResponsiveContainer>
 

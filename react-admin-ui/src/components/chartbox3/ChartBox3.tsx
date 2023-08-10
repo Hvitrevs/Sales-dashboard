@@ -13,7 +13,7 @@ const ChartBox = () => {
     <div className='chartBox'>
         <div className='boxInfo'>
             <div className='title'>
-                <img src='/product.svg' alt='' />
+                <img src='/form.svg' alt='' />
                 <span>Statistics</span>
             </div>
             <h1>Sales </h1>
@@ -23,20 +23,26 @@ const ChartBox = () => {
             <div className='chart'>
 
             <ResponsiveContainer width="100%" height="100%">
-        <PieChart width={400} height={400}>
-          <Pie
-            dataKey="value"
-            startAngle={180}
-            endAngle={0}
-            data={data}
-            cx="50%"
-            cy="100%"
-            outerRadius={40}
-            fill="hsla(352, 100.00%, 69.00%, 0.88)"
-            label
-          />
-        </PieChart>
-      </ResponsiveContainer>
+      <PieChart width={400} height={400}>
+        <defs>
+          <linearGradient id="pieGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="hsl(352, 100%, 69%)" />
+            <stop offset="100%" stopColor="hsl(272, 100%, 69%)" />
+          </linearGradient>
+        </defs>
+        <Pie
+          dataKey="value"
+          startAngle={180}
+          endAngle={0}
+          data={data}
+          cx="50%"
+          cy="100%"
+          outerRadius={40}
+          fill="url(#pieGradient)"
+          label
+        />
+      </PieChart>
+    </ResponsiveContainer>
 
             </div>
             <div className='texts'>
