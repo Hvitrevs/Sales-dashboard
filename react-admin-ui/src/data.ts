@@ -168,20 +168,20 @@ export const menu = [
   ];
   
   export const chartBoxUser = {
-    color: "#8884d8",
+    color: "#7297fd",
     icon: "/userIcon.svg",
     title: "Total Users",
-    number: "11.238",
+    number: "9.253",
     dataKey: "users",
-    percentage: 45,
+    percentage: 37,
     chartData: [
-      { name: "Sun", users: 400 },
-      { name: "Mon", users: 600 },
-      { name: "Tue", users: 500 },
+      { name: "Sun", users: 450 },
+      { name: "Mon", users: 200 },
+      { name: "Tue", users: 600 },
       { name: "Wed", users: 700 },
-      { name: "Thu", users: 400 },
-      { name: "Fri", users: 500 },
-      { name: "Sat", users: 450 },
+      { name: "Thu", users: 320 },
+      { name: "Fri", users: 600 },
+      { name: "Sat", users: 850 },
     ],
   };
   

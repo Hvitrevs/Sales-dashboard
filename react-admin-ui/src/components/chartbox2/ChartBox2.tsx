@@ -75,7 +75,7 @@ const ChartBox = () => {
               >
                 
 
-                <Line type="monotone" dataKey="uv" stroke="#ff44c1" />
+                <Line type="monotone" dataKey="uv" stroke="#ff4476" strokeWidth={2} />
               </LineChart>
             </ResponsiveContainer>
 

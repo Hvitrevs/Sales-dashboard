@@ -3,6 +3,7 @@ import ChartBox1 from "../../components/chartbox1/ChartBox1"
 import ChartBox2 from "../../components/chartbox2/ChartBox2"
 import ChartBox3 from "../../components/chartbox3/ChartBox3"
 import TopBox from "../../components/topBox/TopBox"
+import { chartBoxProduct, chartBoxUser } from "../../data"
 import "./home.scss"
 
 
@@ -12,9 +13,8 @@ const Home = () => {
       <div className="box box1">
         <TopBox />
         </div>
-      <div className="box box2"> 
-      <ChartBox />
-      </div>
+      <div className="box box2"><ChartBox {...chartBoxUser}/></div>
+
       <div className="box box3"> 
       <ChartBox1 />
       </div>
