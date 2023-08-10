@@ -8,7 +8,7 @@ const data = [
     {
       name: 'Page A',
       uv: 4000,
-      pv: 2400,
+      pv: 3400,
       amt: 2400,
     },
     {
@@ -20,13 +20,13 @@ const data = [
     {
       name: 'Page C',
       uv: 2000,
-      pv: 9800,
+      pv: 7800,
       amt: 2290,
     },
     {
       name: 'Page D',
       uv: 2780,
-      pv: 3908,
+      pv: 8908,
       amt: 2000,
     },
     {
@@ -57,7 +57,7 @@ const ChartBox = () => {
                 <span>Total Users</span>
             </div>
             <h1>11.250</h1>
-            <Link to='/users'> Viev all</Link>
+            <Link to='/users'> View all</Link>
         </div>
         <div className='chartInfo'>
             <div className='chart'>
