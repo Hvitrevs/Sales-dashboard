@@ -1,5 +1,7 @@
 import ChartBox from "../../components/chartbox/ChartBox"
 import ChartBox1 from "../../components/chartbox1/ChartBox1"
+import ChartBox2 from "../../components/chartbox2/ChartBox2"
+import ChartBox3 from "../../components/chartbox3/ChartBox3"
 import TopBox from "../../components/topBox/TopBox"
 import "./home.scss"
 
@@ -19,10 +21,10 @@ const Home = () => {
       <div className="box box4"> Box 4</div>
 
       <div className="box box5"> 
-      <ChartBox1 />
+      <ChartBox2 />
       </div>
       <div className="box box6"> 
-      <ChartBox1 />
+      <ChartBox3 />
       </div>
       <div className="box box7"> Box 7</div>
       <div className="box box8"> Box 8</div>

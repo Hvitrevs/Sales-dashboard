@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom'
-import './chartBox1.scss'
-import { BarChart, Bar, ResponsiveContainer } from 'recharts';
+import './chartBox2.scss'
+import { LineChart, Line, CartesianGrid, ResponsiveContainer } from 'recharts';
 
 const data = [
   {
     name: 'Page A',
-    uv: 4000,
+    uv: 2000,
     pv: 2400,
     amt: 2400,
   },
   {
     name: 'Page B',
-    uv: 3000,
+    uv: 2500,
     pv: 1398,
     amt: 2210,
   },
@@ -23,7 +23,7 @@ const data = [
   },
   {
     name: 'Page D',
-    uv: 2780,
+    uv: 1780,
     pv: 3908,
     amt: 2000,
   },
@@ -35,7 +35,7 @@ const data = [
   },
   {
     name: 'Page F',
-    uv: 2390,
+    uv: 390,
     pv: 3800,
     amt: 2500,
   },
@@ -51,24 +51,39 @@ const ChartBox = () => {
     <div className='chartBox'>
         <div className='boxInfo'>
             <div className='title'>
-                <img src='/product.svg' alt='' />
-                <span>Monthly Sales</span>
+                <img src='/order.svg' alt='' />
+                <span>New Customers</span>
             </div>
-            <h1>+ 28%</h1>
-            <Link to='/products'> View all sales</Link>
+            <h1>+ 216</h1>
+            
         </div>
         <div className='chartInfo'>
             <div className='chart'>
+
+
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart width={150} height={40} data={data}>
-                <Bar dataKey="uv" fill="#005c79" />
-              </BarChart>
+              <LineChart
+                width={500}
+                height={300}
+                data={data}
+                margin={{
+                  top: 0,
+                  right: 30,
+                  left: 20,
+                  bottom: 0,
+                }}
+              >
+                <CartesianGrid strokeDasharray=" 1 1" />
+
+                <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+              </LineChart>
             </ResponsiveContainer>
+
 
             </div>
             <div className='texts'>
                 <span className='percentage'></span>
-                <span className='duration'>This month</span>
+                <span className='duration'>Last 6 months</span>
             </div>
         </div>
     </div>

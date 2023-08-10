@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './chartBox1.scss'
+import './chartBox3.scss'
 import { BarChart, Bar, ResponsiveContainer } from 'recharts';
 
 const data = [
