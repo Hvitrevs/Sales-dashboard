@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './chartBox3.scss'
-import { ResponsiveContainer, PieChart, Pie, } from 'recharts';
+import { ResponsiveContainer, PieChart, Pie, Tooltip } from 'recharts';
 
 const data = [
   { name: 'Prints', value: 44 },
@@ -21,6 +21,7 @@ const ChartBox = () => {
         </div>
         <div className='chartInfo'>
             <div className='chart'>
+              
 
             <ResponsiveContainer width="100%" height="100%">
       <PieChart width={400} height={400}>
@@ -37,9 +38,17 @@ const ChartBox = () => {
           data={data}
           cx="50%"
           cy="100%"
-          outerRadius={40}
+          outerRadius={35}
           fill="url(#pieGradient)"
           label
+          
+        />
+        <Tooltip
+
+            contentStyle={{ background: "transparent", border: "none" }}
+            labelStyle={{ display: "none" }}
+            position={{ x: 10, y: 50 }}
+            
         />
       </PieChart>
     </ResponsiveContainer>
