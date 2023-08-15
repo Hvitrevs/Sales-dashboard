@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './chartBox1.scss'
-import { BarChart, Bar, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, ResponsiveContainer, Tooltip } from 'recharts';
 
 const data = [
   {
@@ -61,10 +61,16 @@ const ChartBox = () => {
             <div className='chart'>
     <ResponsiveContainer width="100%" height="100%">
       <BarChart width={150} height={40} data={data}>
+      <Tooltip
+                contentStyle={{ background: "transparent", border: "none" }}
+                labelStyle={{ display: "none" }}
+                position={{ x: 7, y: 55 }}
+                
+              />
         <defs>
           <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor="hsl(270, 100%, 59%)" />
-            <stop offset="100%" stopColor="hsl(194, 100.00%, 59.00%)" />
+            <stop offset="100%" stopColor="hsl(200, 100%, 59%)" />
           </linearGradient>
         </defs>
         <Bar dataKey="uv" fill="url(#gradient)" />
