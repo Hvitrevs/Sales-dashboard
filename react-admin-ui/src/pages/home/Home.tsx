@@ -16,12 +16,12 @@ const Home = () => {
       <div className="box box2"><ChartBox {...chartBoxUser}/></div>
 
       <div className="box box3"> 
-      <ChartBox1 />
+      <ChartBox1  />
       </div>
       <div className="box box4"> Box 4</div>
 
       <div className="box box5"> 
-      <ChartBox2 />
+      <ChartBox2 {... chartBoxProduct}/>
       </div>
       <div className="box box6"> 
       <ChartBox3 />

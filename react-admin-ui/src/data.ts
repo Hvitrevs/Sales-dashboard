@@ -188,18 +188,18 @@ export const menu = [
   export const chartBoxProduct = {
     color: "skyblue",
     icon: "/productIcon.svg",
-    title: "Total Products",
-    number: "238",
+    title: "Sold Products",
+    number: "+238",
     dataKey: "products",
-    percentage: 21,
+    percentage: 51,
     chartData: [
-      { name: "Sun", products: 400 },
-      { name: "Mon", products: 600 },
-      { name: "Tue", products: 500 },
-      { name: "Wed", products: 700 },
-      { name: "Thu", products: 400 },
-      { name: "Fri", products: 500 },
-      { name: "Sat", products: 450 },
+      { name: "Sun", products: 620 },
+      { name: "Mon", products: 634 },
+      { name: "Tue", products: 810 },
+      { name: "Wed", products: 913 },
+      { name: "Thu", products: 1185 },
+      { name: "Fri", products: 922 },
+      { name: "Sat", products: 1250 },
     ],
   };
   export const chartBoxRevenue = {
