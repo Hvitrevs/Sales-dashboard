@@ -1,5 +1,8 @@
 # Sales-dashboard
-utilizes recharts 
+## utilizes
+<p align-left>
+recharts 
+React
 Vite
 Typescript
 Sass
