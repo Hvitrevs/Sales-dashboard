@@ -1,7 +1,7 @@
 # Sales-dashboard
 ## utilizes
 <p align-left>
-recharts 
+Recharts 
 React
 Vite
 Typescript
