@@ -205,7 +205,7 @@ export const menu = [
   export const chartBoxRevenue = {
     color: "teal",
     icon: "/revenueIcon.svg",
-    title: "Monthly sales",
+    title: "This week sales",
     number: "$6.432",
     dataKey: "revenue",
     percentage: "-14",
