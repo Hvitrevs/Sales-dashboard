@@ -173,7 +173,7 @@ export const menu = [
     title: "Total Users",
     number: "9.253",
     dataKey: "users",
-    percentage: 37,
+    percentage: "+52",
     chartData: [
       { name: "Sun", users: 1250 },
       { name: "Mon", users: 1200 },
@@ -189,17 +189,17 @@ export const menu = [
     color: "skyblue",
     icon: "/productIcon.svg",
     title: "Products",
-    number: "+238",
+    number: "+11.015",
     dataKey: "products",
-    percentage: 51,
+    percentage: "+41",
     chartData: [
-      { name: "Sun", products: 620 },
-      { name: "Mon", products: 634 },
+      { name: "Sun", products: 1520 },
+      { name: "Mon", products: 1334 },
       { name: "Tue", products: 810 },
       { name: "Wed", products: 913 },
-      { name: "Thu", products: 1185 },
-      { name: "Fri", products: 922 },
-      { name: "Sat", products: 1250 },
+      { name: "Thu", products: 2185 },
+      { name: "Fri", products: 1122 },
+      { name: "Sat", products: 3250 },
     ],
   };
   export const chartBoxRevenue = {
@@ -208,7 +208,7 @@ export const menu = [
     title: "Monthly sales",
     number: "$6.432",
     dataKey: "revenue",
-    percentage: -12,
+    percentage: "-14",
     chartData: [
       { name: "Sun", revenue: 1400 },
       { name: "Mon", revenue: 1600 },
@@ -225,7 +225,7 @@ export const menu = [
     title: "Statistics",
     number: "up +2.6",
     dataKey: "ratio",
-    percentage: 12,
+    percentage: "+22",
     chartData: [
       { name: "Sun", ratio: 400 },
       { name: "Mon", ratio: 600 },
