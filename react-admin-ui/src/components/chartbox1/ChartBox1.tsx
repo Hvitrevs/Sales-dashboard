@@ -44,7 +44,7 @@ const ChartBox1 = (props: Props) => {
             <defs>
               <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="hsl(270, 100%, 59%)" />
-                <stop offset="100%" stopColor="hsl(200, 100%, 59%)" />
+                <stop offset="100%" stopColor="hsl(166, 100.00%, 59.00%)" />
               </linearGradient>
             </defs>
             <Bar
