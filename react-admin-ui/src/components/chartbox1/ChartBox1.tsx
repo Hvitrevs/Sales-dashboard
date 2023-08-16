@@ -35,7 +35,7 @@ const ChartBox1 = (props: Props) => {
                 contentStyle={{
                     background: "transparent",
                     border: "none",
-                    color: "hsl(200, 100%, 59%)"
+                    color: "hsl(188, 100.00%, 59.00%)"
                   
                   }}
                 labelStyle={{ display: "none", background:"transparent" }}
