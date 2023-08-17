@@ -220,7 +220,7 @@ export const menu = [
     ],
   };
   export const chartBoxConversion = {
-    color: "gold",
+    color: "hsl(270, 100%, 59%)",
     icon: "/conversionIcon.svg",
     title: "Statistics",
     number: "up +2.6",
@@ -228,10 +228,7 @@ export const menu = [
     percentage: "+22",
     chartData: [
       { name: "Sun", ratio: 400 },
-      { name: "Mon", ratio: 600 },
       { name: "Tue", ratio: 500 },
-      { name: "Wed", ratio: 700 },
-      { name: "Thu", ratio: 400 },
       { name: "Fri", ratio: 500 },
       { name: "Sat", ratio: 450 },
     ],

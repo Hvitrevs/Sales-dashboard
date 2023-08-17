@@ -1,66 +1,83 @@
-import { Link } from 'react-router-dom'
-import './chartBox3.scss'
-import { ResponsiveContainer, PieChart, Pie, Tooltip } from 'recharts';
+import { Link } from "react-router-dom";
+import "./chartBox3.scss";
+import { Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 
-const data = [
-  { name: 'Prints', value: 44 },
-  { name: 'Art', value: 110 },
-  { name: 'Commissions', value: 15 },
-];
+type Props = {
+  color: string;
+  icon: string;
+  title: string;
+  dataKey: string;
+  number: number | string;
+  percentage: number;
+  chartData: object[];
+};
 
-const ChartBox = () => {
+const ChartBox3 = (props: Props) => {
   return (
-    <div className='chartBox'>
-        <div className='boxInfo'>
-            <div className='title'>
-                <img src='/form.svg' alt='' />
-                <span>Statistics</span>
-            </div>
-            <h1>Sales </h1>
-            <Link to='/sales'> View all</Link>
+    <div className="chartBox">
+      <div className="boxInfo">
+        <div className="title">
+        <img src='/chart.svg' alt='' />
+          <span>{props.title}</span>
         </div>
-        <div className='chartInfo'>
-            <div className='chart'>
+        <h1>{props.number}</h1>
+        <Link to="/charts" style={{ color: props.color }}>
+          View all
+        </Link>
+      </div>
+      <div className="chartInfo">
+        <div className="chart">
+
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart width={400} height={400}>
+            <defs>
+              <linearGradient id="pieGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="hsl(352, 100%, 69%)" />
+                <stop offset="100%" stopColor="hsl(272, 100%, 69%)" />
+              </linearGradient>
+            </defs>
+            <Pie
+              dataKey={props.dataKey}
+              startAngle={180}
+              endAngle={0}
+              data={props.chartData}
+              cx="50%"
+              cy="110%"
+              outerRadius={25}
+              fill="url(#pieGradient)"
+              label
               
+            />
+            <Tooltip
 
-            <ResponsiveContainer width="100%" height="100%">
-      <PieChart width={400} height={400}>
-        <defs>
-          <linearGradient id="pieGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="hsl(352, 100%, 69%)" />
-            <stop offset="100%" stopColor="hsl(272, 100%, 69%)" />
-          </linearGradient>
-        </defs>
-        <Pie
-          dataKey="value"
-          startAngle={180}
-          endAngle={0}
-          data={data}
-          cx="50%"
-          cy="100%"
-          outerRadius={35}
-          fill="url(#pieGradient)"
-          label
-          
-        />
-        <Tooltip
-
-            contentStyle={{ background: "transparent", border: "none" }}
-            labelStyle={{ display: "none" }}
-            position={{ x: 10, y: 50 }}
-            
-        />
-      </PieChart>
+                contentStyle={{ 
+                  background: "hsla(171, 73.30%, 23.50%, 0.19)",
+                  border: "none",
+                  color:"hsl(270, 100%, 59%)"
+                 }}
+                labelStyle={{ display: "none" }}
+                position={{ x: 10, y: -40 }}
+                
+            />
+          </PieChart>
     </ResponsiveContainer>
 
-            </div>
-            <div className='texts'>
-                <span className='percentage'></span>
-                <span className='duration'>This month</span>
-            </div>
         </div>
+        <div className="texts">
+          <span
+            className="percentage"
+            style={{ color: props.percentage < 0 ? "tomato" : "limegreen" }}
+          >
+            {props.percentage}%
+          </span>
+          <span className="duration">This month</span>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ChartBox
+export default ChartBox3;
+
+
+ 
