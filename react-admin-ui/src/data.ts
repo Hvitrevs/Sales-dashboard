@@ -227,10 +227,10 @@ export const menu = [
     dataKey: "ratio",
     percentage: "+22",
     chartData: [
-      { name: "Sun", ratio: 400 },
-      { name: "Tue", ratio: 500 },
-      { name: "Fri", ratio: 500 },
-      { name: "Sat", ratio: 450 },
+      { name: "Sun", ratio: 820 },
+      { name: "Tue", ratio: 613 },
+      { name: "Fri", ratio: 1500 },
+      { name: "Sat", ratio: 950 },
     ],
   };
   
