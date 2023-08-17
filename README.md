@@ -4,13 +4,10 @@
 ## Description
 
 
-### utilizes
+### utilizes:
 <p align-left>
 Recharts 
-React
-Vite
-Typescript
-Sass
+
 
 </p>
 <p align-left>
