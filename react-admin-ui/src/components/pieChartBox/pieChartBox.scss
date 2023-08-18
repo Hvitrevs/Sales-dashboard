@@ -1,0 +1,13 @@
+.pieChartBox {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .chart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
