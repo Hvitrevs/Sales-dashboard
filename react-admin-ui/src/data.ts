@@ -241,19 +241,19 @@ export const menu = [
     chartData: [
       {
         name: "Sun",
-        profit: 4000,
+        profit: 3300,
       },
       {
         name: "Mon",
-        profit: 3000,
+        profit: 2400,
       },
       {
         name: "Tue",
-        profit: 2000,
+        profit:2500,
       },
       {
         name: "Wed",
-        profit: 2780,
+        profit: 1580,
       },
       {
         name: "Thu",
@@ -261,11 +261,11 @@ export const menu = [
       },
       {
         name: "Fri",
-        profit: 2390,
+        profit: 3190,
       },
       {
         name: "Sat",
-        profit: 3490,
+        profit: 3860,
       },
     ],
   };
@@ -277,27 +277,27 @@ export const menu = [
     chartData: [
       {
         name: "Sun",
-        visit: 4000,
-      },
-      {
-        name: "Mon",
         visit: 3000,
       },
       {
-        name: "Tue",
+        name: "Mon",
         visit: 2000,
       },
       {
+        name: "Tue",
+        visit: 2200,
+      },
+      {
         name: "Wed",
-        visit: 2780,
+        visit: 980,
       },
       {
         name: "Thu",
-        visit: 1890,
+        visit: 1390,
       },
       {
         name: "Fri",
-        visit: 2390,
+        visit: 2590,
       },
       {
         name: "Sat",
@@ -305,6 +305,56 @@ export const menu = [
       },
     ],
   };
+
+  export const bigChartBoxRevenue = {  
+      title: "Profit Earned",
+      color: "#8884d8",
+      dataKey: "profit",
+      chartData: [
+    {
+      name: 'week 1',
+      artworks: 4000,
+      stickers: 2400,
+      posters: 2400,
+    },
+    {
+      name: 'week 2',
+      artworks: 3000,
+      stickers: 1398,
+      posters: 2210,
+    },
+    {
+      name: 'week 3',
+      artworks: 2000,
+      stickers: 9800,
+      posters: 2290,
+    },
+    {
+      name: 'week 4',
+      artworks: 2780,
+      stickers: 3908,
+      posters: 2900,
+    },
+    {
+      name: 'week 5',
+      artworks: 2890,
+      stickers: 2800,
+      posters: 3181,
+    },
+    {
+      name: 'week 6',
+      artworks: 2390,
+      stickers: 3800,
+      posters: 2500,
+    },
+    {
+      name: 'week 7',
+      artworks: 3490,
+      stickers: 4300,
+      posters: 2100,
+    },
+  ],
+};
   
   export const userRows = [
     {
