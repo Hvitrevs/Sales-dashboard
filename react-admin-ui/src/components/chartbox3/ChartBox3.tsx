@@ -28,12 +28,12 @@ const ChartBox3 = (props: Props) => {
       <div className="chartInfo">
         <div className="chart">
 
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="99%" height="100%">
           <PieChart width={400} height={400}>
             <defs>
               <linearGradient id="pieGradient" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="hsl(352, 100%, 69%)" />
-                <stop offset="100%" stopColor="hsl(272, 100%, 69%)" />
+                <stop offset="100%" stopColor="hsl(296, 100.00%, 69.00%)" />
               </linearGradient>
             </defs>
             <Pie
@@ -42,8 +42,8 @@ const ChartBox3 = (props: Props) => {
               endAngle={0}
               data={props.chartData}
               cx="50%"
-              cy="110%"
-              outerRadius={25}
+              cy="100%"
+              outerRadius={18}
               fill="url(#pieGradient)"
               label
               
