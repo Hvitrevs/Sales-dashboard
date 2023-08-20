@@ -3,7 +3,7 @@ import "./users.scss"
 
 const Users = () => {
   return (
-    <div className="Users">Users</div>
+    <div className="users">Users</div>
   )
 }
 export default Users
