@@ -168,9 +168,9 @@ export const menu = [
   ];
   
   export const chartBoxUser = {
-    color: "#7297fd",
+    color: "#5682fb",
     icon: "/userIcon.svg",
-    title: "Total Users",
+    title: "Month Users",
     number: "9.253",
     dataKey: "users",
     percentage: "+52",
@@ -205,7 +205,7 @@ export const menu = [
   export const chartBoxRevenue = {
     color: "teal",
     icon: "/revenueIcon.svg",
-    title: "This week sales",
+    title: "Per Week",
     number: "$6.432",
     dataKey: "revenue",
     percentage: "-14",

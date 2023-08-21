@@ -51,12 +51,12 @@ const ChartBox3 = (props: Props) => {
             <Tooltip
 
                 contentStyle={{ 
-                  background: "hsla(171, 73.30%, 23.50%, 0.19)",
-                  border: "none",
-                  color:"hsl(270, 100%, 59%)"
+                  background: "hsla(171, 63.80%, 36.90%, 0.46)",
+                  borderRadius: "5px",
+                  borderColor:"hsla(171, 63.80%, 36.90%, 0.00)"
                  }}
                 labelStyle={{ display: "none" }}
-                position={{ x: 10, y: -40 }}
+                position={{ x: 10, y: 0 }}
                 
             />
           </PieChart>
