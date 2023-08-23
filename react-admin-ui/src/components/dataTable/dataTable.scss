@@ -1,3 +1,15 @@
 .gataTable{
-    
+    .dataGrid{
+        border-radius: 1rem;
+        background-image: linear-gradient(to bottom, hsla(240, 24%, 37%, 0.123),hsla(240, 30%, 17%, 0.056) );
+        opacity: 70%;
+        padding: 20px;
+    }
+
+    &:hover {
+        box-shadow: 0 0 20px hsla(164, 100%, 76%, 0.164);
+        opacity: 100%;
+
+
+        }
 }
