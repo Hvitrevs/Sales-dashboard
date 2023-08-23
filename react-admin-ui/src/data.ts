@@ -512,7 +512,7 @@ export const menu = [
       verified: false,
     },
     {
-      id: 1,
+      id: 17,
       img: "https://images.pexels.com/photos/9876543/pexels-photo-9876543.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       lastName: "Taylor",
       firstName: "Emma",
@@ -522,7 +522,7 @@ export const menu = [
       verified: true,
     },
     {
-      id: 12,
+      id: 18,
       img: "https://images.pexels.com/photos/2345678/pexels-photo-2345678.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       lastName: "Brown",
       firstName: "Michael",
