@@ -1,10 +1,15 @@
+import DataTable from "../../components/dataTable/DataTable"
 import "./users.scss"
 
 
 const Users = () => {
   return (
     <div className="users">
-      <h1> </h1>
+      <div className="info">
+        <h1>Users</h1>
+        <button> + </button>
+      </div>
+      <DataTable />
     </div>
   )
 }

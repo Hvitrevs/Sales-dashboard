@@ -1,20 +1,47 @@
-.gataTable{
-    .dataGrid{
-        border-radius: 1rem;
-        background-image: linear-gradient(to bottom, hsla(240, 24%, 37%, 0.123),hsla(240, 30%, 17%, 0.056) );
+.dataTable {
+    .dataGrid {
         opacity: 70%;
-        padding: 20px;
+      padding: 20px;
+      background: linear-gradient(to bottom, rgba(65, 119, 99, 0.634), rgba(27, 97, 103, 0.1));
+      border: none;
+      color: rgba(175, 255, 255, 0.711);
 
-
-        .MuiDataGrid-toolbarContainer{
-            flex-direction: row-reverse;
-        }
-    }
-
-    &:hover {
+      &:hover {
         box-shadow: 0 0 20px hsla(164, 100%, 76%, 0.164);
         opacity: 100%;
 
 
         }
-}
+        .css-5wly58-MuiDataGrid-root{
+            border: none;
+        }
+
+      /* Other styles */
+  
+      .MuiDataGrid-toolbarContainer {
+        flex-direction: row-reverse;
+        border: none;
+      }
+      .css-wop1k0-MuiDataGrid-footerContainer {
+        border: none;
+      }
+  
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+  
+      .action {
+        display: flex;
+        gap: 15px;
+  
+        img {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
