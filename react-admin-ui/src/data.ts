@@ -501,6 +501,36 @@ export const menu = [
       phone: "123 456 789",
       createdAt: "01.02.2023",
     },
+    {
+      id: 16,
+      img: "https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      lastName: "Smith",
+      firstName: "John",
+      email: "john.smith@example.com",
+      phone: "987 654 321",
+      createdAt: "15.03.2023",
+      verified: false,
+    },
+    {
+      id: 1,
+      img: "https://images.pexels.com/photos/9876543/pexels-photo-9876543.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      lastName: "Taylor",
+      firstName: "Emma",
+      email: "emma.taylor@example.com",
+      phone: "555 123 456",
+      createdAt: "10.04.2023",
+      verified: true,
+    },
+    {
+      id: 12,
+      img: "https://images.pexels.com/photos/2345678/pexels-photo-2345678.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      lastName: "Brown",
+      firstName: "Michael",
+      email: "michael.brown@gmail.com",
+      phone: "777 888 999",
+      createdAt: "05.05.2023",
+      verified: false,
+    },
   ];
   
   export const products = [

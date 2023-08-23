@@ -1,10 +1,12 @@
 .dataTable {
+    padding: 0.5rem;
+
     .dataGrid {
-        opacity: 70%;
+      opacity: 60%;
       padding: 20px;
-      background: linear-gradient(to bottom, rgba(65, 119, 99, 0.634), rgba(27, 97, 103, 0.1));
+      background: linear-gradient(to bottom, rgba(65, 119, 99, 0.359), rgba(27, 97, 103, 0.1));
       border: none;
-      color: rgba(175, 255, 255, 0.711);
+      color: rgba(209, 236, 236, 0.831);
 
       &:hover {
         box-shadow: 0 0 20px hsla(164, 100%, 76%, 0.164);
