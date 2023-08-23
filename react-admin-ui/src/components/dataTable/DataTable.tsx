@@ -2,7 +2,9 @@ import "./dataTable.scss"
 
 const DataTable = () => {
   return (
-    <div>DataTable</div>
+    <div className="dataTable">
+        <h1></h1>
+    </div>
   )
 }
 
