@@ -1,3 +1,29 @@
 .users {
+    .info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+
+        button{
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 10px;
+            border-color:  hsl(175, 46%, 48%);
+            background-image: linear-gradient(to bottom, hsl(175, 46%, 48%),hsla(160, 65%, 51%, 0.866) );
+            opacity: 70%;
+            color: hsl(175, 100%, 88%);
+            font-size: small;
+            font-weight: 600;
     
+    
+            &:hover {
+                box-shadow: 0 0 20px hsla(164, 78%, 34%, 0.401);
+                opacity: 100%;
+    
+    
+                }
+        }
+    }
 }
