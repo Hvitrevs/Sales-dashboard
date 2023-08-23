@@ -21,7 +21,8 @@ const BarChartBox1 = (props: Props) => {
             <Tooltip
                 contentStyle={{
                     background: "hsla(186, 70.10%, 13.10%, 0.42)",
-                    border: "none",
+                    borderRadius: "5%",
+                    borderColor: "hsla(186, 70.10%, 13.10%, 0.42)",
                     color: "hsl(188, 100.00%, 59.00%)"
                   
                   }}
@@ -31,8 +32,8 @@ const BarChartBox1 = (props: Props) => {
             />
             <defs>
               <linearGradient id="gradient1" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="hsla(163, 78.10%, 44.70%, 0.73)" />
-                <stop offset="100%" stopColor="hsl(188, 100.00%, 42.20%)" />
+                <stop offset="0%" stopColor="hsla(150, 100.00%, 61.00%, 0.73)" />
+                <stop offset="100%" stopColor="hsl(180, 100.00%, 49.20%)" />
               </linearGradient>
             </defs>
             <Bar

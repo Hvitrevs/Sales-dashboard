@@ -36,12 +36,12 @@ const PieChartBox = () => {
               </linearGradient>
             </defs>
             <Tooltip
-                              contentStyle={{ 
-                                background: "hsla(171, 100.00%, 74.30%, 0.50)",
-                                borderRadius: "5px",
-                                borderColor:"hsla(171, 63.80%, 36.90%, 0.00)"
-                               }}
-                              labelStyle={{ display: "none" }}
+              contentStyle={{ 
+                  background: "hsla(171, 100.00%, 74.30%, 0.50)",
+                  borderRadius: "5px",
+                  borderColor:"hsla(171, 63.80%, 36.90%, 0.00)"
+              }}
+              labelStyle={{ display: "none" }}
                               
             />
             <Pie

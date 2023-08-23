@@ -205,18 +205,18 @@ export const menu = [
   export const chartBoxRevenue = {
     color: "teal",
     icon: "/revenueIcon.svg",
-    title: "Per Week",
-    number: "$6.432",
+    title: "Revenue",
+    number: "$16.432",
     dataKey: "revenue",
     percentage: "-14",
     chartData: [
-      { name: "Sun", revenue: 1400 },
-      { name: "Mon", revenue: 1600 },
-      { name: "Tue", revenue: 900 },
-      { name: "Wed", revenue: 500 },
-      { name: "Thu", revenue: 800 },
-      { name: "Fri", revenue: 1200 },
-      { name: "Sat", revenue: 1150 },
+      { name: "Sun", revenue: 3400 },
+      { name: "Mon", revenue: 2200 },
+      { name: "Tue", revenue: 2500 },
+      { name: "Wed", revenue: 1500 },
+      { name: "Thu", revenue: 1900 },
+      { name: "Fri", revenue: 3200 },
+      { name: "Sat", revenue: 4150 },
     ],
   };
   export const chartBoxConversion = {
@@ -225,12 +225,13 @@ export const menu = [
     title: "Statistics",
     number: "up +2.6",
     dataKey: "ratio",
-    percentage: "+22",
+    percentage: "26",
     chartData: [
       { name: "Sun", ratio: 820 },
       { name: "Tue", ratio: 613 },
       { name: "Fri", ratio: 1500 },
       { name: "Sat", ratio: 950 },
+      { name: "Wed", ratio: 650 },
     ],
   };
   

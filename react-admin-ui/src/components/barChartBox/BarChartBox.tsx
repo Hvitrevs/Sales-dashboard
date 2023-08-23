@@ -17,8 +17,9 @@ const BarChartBox = (props: Props) => {
             <BarChart width={100} height={20} data={props.chartData}>
             <Tooltip
                 contentStyle={{
-                    background: "hsla(186, 70.10%, 13.10%, 0.42)",
-                    border: "none",
+                    background: "hsla(0, 70.10%, 13.10%, 0.42)",
+                    borderRadius: "5%",
+                    borderColor: "hsla(0, 70.10%, 13.10%, 0.42)",
                     color: "hsl(188, 100.00%, 59.00%)"
                   
                   }}

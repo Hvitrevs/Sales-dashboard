@@ -18,7 +18,7 @@ const BigChartBox = (props: Props) => {
       <AreaChart
         data={props.chartData}
         margin={{
-          top: 0,
+          top: 50,
           right: 30,
           left: 0,
           bottom: 10,
@@ -48,12 +48,13 @@ const BigChartBox = (props: Props) => {
         <Tooltip
                 contentStyle={{
                     background: "hsla(186, 70.10%, 13.10%, 0.42)",
-                    border: "none",
+                    borderRadius: "5%",
+                    borderColor: "hsla(186, 70.10%, 13.10%, 0.42)",
                     color: "hsl(188, 100.00%, 59.00%)"
                   
                   }}
                 labelStyle={{ display: "none", background:"transparent" }}
-                position={{ x: 80, y: -10 }}
+                position={{ x: 80, y: 0 }}
                 cursor={{fill:"none"}}
                 />
         <Area type="monotone" dataKey="artworks" stackId="1" stroke="#7c76f5" fill="url(#areaGradient)" />
