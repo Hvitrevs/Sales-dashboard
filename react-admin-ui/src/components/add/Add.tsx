@@ -29,7 +29,7 @@ const Add = (props: Props) => {
                         <input type={column.type} placeholder={column.field} />
                     </div>
                 ))}
-                <button>Add</button>
+                 <button onClick={() =>alert('This button is for display purpose only and has no actual file to store your data. Sorry :)')}> ADD </button>
             </form>
         </div>
     </div>;

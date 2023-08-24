@@ -10,6 +10,9 @@ const Single = () => {
                     <h1> John Doe</h1>
                     <button> Update </button>
                 </div>
+                <div className="details">
+                    
+                </div>
             </div>
             <div className="chart"></div>
 
