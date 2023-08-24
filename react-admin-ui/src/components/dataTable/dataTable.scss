@@ -2,10 +2,12 @@
     padding: 0.5rem;
 
     .dataGrid {
-      opacity: 60%;
+      opacity: 70%;
       padding: 20px;
-      background: linear-gradient(to bottom, rgba(65, 119, 99, 0.153), rgba(27, 97, 103, 0.013));
-      border: none;
+      background-image: linear-gradient(to bottom, hsla(240, 24%, 37%, 0.153),hsla(240, 30%, 17%, 0.056) );
+
+      border-radius: 1rem;
+      border-color:  hsla(240, 24%, 37%, 0.153);
       color: rgba(209, 236, 236, 0.831);
 
       &:hover {

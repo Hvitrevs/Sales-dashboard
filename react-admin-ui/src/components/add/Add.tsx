@@ -10,11 +10,17 @@ type Props ={
 }
 
 const Add = (props: Props) => {
+
+    const handleSubmit =(e: React.FormEvent<HTMLFormElement>) =>{
+        e.preventDefault();
+}
+
+
   return <div className="add">
         <div className="modal">
             <span className="close" onClick={()=>props.setOpen(false)}> x </span>
             <h1> New {props.slug}</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 {props.columns
                 .filter(item=>item.field !== "id" && item.field !== "img" )
                 .map((column) => (
@@ -23,6 +29,7 @@ const Add = (props: Props) => {
                         <input type={column.type} placeholder={column.field} />
                     </div>
                 ))}
+                <button>Add</button>
             </form>
         </div>
     </div>;
