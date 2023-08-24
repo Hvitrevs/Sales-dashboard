@@ -13,6 +13,7 @@ import Profile from "./pages/profile/Profile";
 
 
 
+
 function App() {
 
   const Layout = () => {
@@ -44,6 +45,10 @@ function App() {
         {
           path: '/users',
           element: <Users />
+        },
+        {
+          path: '/profile',
+          element: <Profile />
         },
         
         {
