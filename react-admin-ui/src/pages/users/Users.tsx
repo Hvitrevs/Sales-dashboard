@@ -1,3 +1,4 @@
+import { useState } from "react";
 import DataTable from "../../components/dataTable/DataTable"
 import { userRows } from "../../data";
 import "./users.scss"
@@ -52,6 +53,7 @@ const columns: GridColDef[] = [
 ];
 
 const Users = () => {
+  const [open, setOpen] = useState(false)
   return (
     <div className="users">
       <div className="info">
@@ -59,6 +61,7 @@ const Users = () => {
         <button> ADD </button>
       </div>
       <DataTable slug="users" columns={columns} rows={userRows} />
+      {open && < Add setOpen={setOpen}/>}
     </div>
   )
 }
