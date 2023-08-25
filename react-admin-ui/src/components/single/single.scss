@@ -85,7 +85,7 @@
 
         .chart{
             width:600px;
-            height:400px;
+            height:477px;
             padding: 1rem;
             margin-top: 10px;
             
@@ -107,9 +107,9 @@
             li{
                 list-style-type: none;
                 position: relative;
-                width: 1px;
-                padding-top: 5px;
-                background-color: rgba(251, 83, 142, 0.756);
+                width: 2px;
+                padding-top: 50px;
+                background-color: rgba(255, 47, 120, 0.37);
 
                 &::after{
                     content: "";
@@ -121,6 +121,22 @@
                     border-radius: 50%;
                     background-color: rgba(251, 83, 142, 0.756);
                     transform: translateX(-50%);
+                }
+
+                div{
+                    min-width:480px ;
+                    padding: 15px;
+                    border-radius: 15px;
+                    background-color:rgba(255, 68, 87, 0.096);
+
+                    p{
+                        margin-bottom: 5px;
+                    }
+
+                    time{
+                        font-size: 13px;
+                        opacity: 50%;
+                    }
                 }
             }
         }
