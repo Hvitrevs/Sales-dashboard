@@ -7,10 +7,10 @@ type Props ={
     title: string;
     info: object;
     chart?: {
-        dataKeys: { name: string; color: string}[];
+        dataKeys: { name: string; color: string} [];
         data: object[];
     };
-    activities?: {title: string; text: string};
+    activities?: { time: string; text: string } [];
 };
 
 const Single = (props: Props) => {
@@ -42,19 +42,36 @@ const Single = (props: Props) => {
                             height={100}
                             data={props.chart.data}
                             margin={{
-                                top: 0,
+                                top: 20,
                                 right: 20,
-                                bottom: 0,
-                                left: 20,
+                                bottom: -20,
+                                left: 10,
                             }}
                         >
+                            <defs>
+          <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#4ae4ff" />
+            <stop offset="100%" stopColor="#104237" stopOpacity={0} />
+          </linearGradient>
+        </defs>
                     
                         <XAxis 
                         dataKey="name" 
                         scale="band" />
 
                         <YAxis />
-                        <Tooltip />
+                        <Tooltip
+                contentStyle={{
+                    background: "hsla(186, 70.10%, 13.10%, 0.42)",
+                    borderRadius: "5%",
+                    borderColor: "hsla(186, 70.10%, 13.10%, 0.42)",
+                    color: "hsl(188, 100.00%, 59.00%)"
+                  
+                  }}
+                labelStyle={{ display: "none", background:"transparent" }}
+                position={{ x: 80, y: 0 }}
+                cursor={{fill:"none"}}
+                />
                         <Legend />
                         {props.chart.dataKeys.map((dataKey) => (
                             <Area
@@ -64,6 +81,7 @@ const Single = (props: Props) => {
                                 fill="url(#areaGradient)"
                             />
                             
+                            
                         ))}
                         </ComposedChart>
                     </ResponsiveContainer>
@@ -72,26 +90,20 @@ const Single = (props: Props) => {
         </div>
     <div className="activities">
         <h2> Purchase History </h2>
-        <ul>
-            <li>
-                <div>
-                    <p> John Doe purchased Playstation 5 Digital Edition </p>
-                    <time> 3 days ago </time>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <p> John Doe purchased Playstation 5 Digital Edition </p>
-                    <time> 3 days ago </time>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <p> John Doe purchased Playstation 5 Digital Edition </p>
-                    <time> 3 days ago </time>
-                </div>
-            </li>
-        </ul>
+        {props.activities && (
+            <ul>
+                {props.activities.map((activity) => (
+                        
+                    <li key={activity.text}>
+                        <div>
+                            <p> {activity.text} </p>
+                            <time> {activity.time} </time>
+                        </div>
+                    </li>
+                ))}
+
+            </ul>
+        )}
 
     </div>
         
