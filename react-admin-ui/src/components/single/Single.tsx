@@ -46,49 +46,67 @@ const Single = () => {
         <div className="view">
             <div className="info">
                 <div className="topInfo">
-                    <img src="" alt="" />
+                    <img src="https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" />
                     <h1> John Doe</h1>
-                    <button> Update </button>
+                    <button onClick={() =>alert('This button is for display purpose only and has no actual file to store your data. Sorry :)')}> UPDATE </button>
                 </div>
                 <div className="details">
                     <div className="item">
-                        <span className="itemTitle"></span>
-                        <span className="itemValue"></span>
+                        <span className="itemTitle">Username:</span>
+                        <span className="itemValue">John Doe</span>
+                    </div>
+                    <div className="item">
+                        <span className="itemTitle">U</span>
+                        <span className="itemValue">D</span>
+                    </div>
+                    <div className="item">
+                        <span className="itemTitle">U</span>
+                        <span className="itemValue">D</span>
                     </div>
                 </div>
             </div>
+            <hr />
             <div className="chart">
 
-            <ResponsiveContainer width="100%" height="100%">
-        <ComposedChart
-          width={500}
-          height={400}
-          data={data}
-          margin={{
-            top: 20,
-            right: 20,
-            bottom: 20,
-            left: 20,
-          }}
-        >
-          <CartesianGrid stroke="#f5f5f5" />
-          <XAxis dataKey="name" scale="band" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="uv" barSize={20} fill="#413ea0" />
-          <Line type="monotone" dataKey="uv" stroke="#ff7300" />
-        </ComposedChart>
-      </ResponsiveContainer>
-
-
-
+                <ResponsiveContainer >
+                    <ComposedChart
+                        width={100}
+                        height={100}
+                        data={data}
+                        margin={{
+                            top: 0,
+                            right: 20,
+                            bottom: 0,
+                            left: 20,
+                        }}
+                    >
+                    
+                    <XAxis dataKey="name" scale="band" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="uv" barSize={20} fill="#413ea0" />
+                    <Line type="monotone" dataKey="uv" stroke="#ff7300" />
+                    </ComposedChart>
+                </ResponsiveContainer>
             </div>
 
         </div>
     <div className="activities">
         <h2> Purchase History </h2>
         <ul>
+            <li>
+                <div>
+                    <p> John Doe purchased Playstation 5 Digital Edition </p>
+                    <time> 3 days ago </time>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p> John Doe purchased Playstation 5 Digital Edition </p>
+                    <time> 3 days ago </time>
+                </div>
+            </li>
             <li>
                 <div>
                     <p> John Doe purchased Playstation 5 Digital Edition </p>
