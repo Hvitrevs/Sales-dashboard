@@ -1,4 +1,4 @@
-import { Bar, CartesianGrid, ComposedChart, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
+import { Area, Bar, ComposedChart, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
 import "./single.scss"
 
 type Props ={
@@ -6,11 +6,12 @@ type Props ={
     img?: string;
     title: string;
     info: object;
-    chart: {
-        dataKeys: { name: string; color: string};
+    chart?: {
+        dataKeys: { name: string; color: string}[];
         data: object[];
     };
-}
+    activities?: {title: string; text: string};
+};
 
 const Single = (props: Props) => {
   return (
@@ -18,51 +19,56 @@ const Single = (props: Props) => {
         <div className="view">
             <div className="info">
                 <div className="topInfo">
-                    <img src="https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" />
-                    <h1> John Doe</h1>
+                    {props.img && <img src={props.img} alt="" />}
+                    <h1>{props.title}</h1>
                     <button onClick={() =>alert('This button is for display purpose only and has no actual file to store your data. Sorry :)')}> UPDATE </button>
                 </div>
                 <div className="details">
-                    <div className="item">
-                        <span className="itemTitle">Username:</span>
-                        <span className="itemValue">John Doe</span>
-                    </div>
-                    <div className="item">
-                        <span className="itemTitle">U</span>
-                        <span className="itemValue">D</span>
-                    </div>
-                    <div className="item">
-                        <span className="itemTitle">U</span>
-                        <span className="itemValue">D</span>
-                    </div>
+                    {Object.entries(props.info).map((item) => (
+                        <div className="item" key={item[0]}>
+                            <span className="itemTitle">{item[0]}</span>
+                            <span className="itemValue">{item[1]}</span>
+                        </div>
+                    ))}
                 </div>
             </div>
             <hr />
-            <div className="chart">
+            {props.chart && 
+                <div className="chart">
 
-                <ResponsiveContainer >
-                    <ComposedChart
-                        width={100}
-                        height={100}
-                        data={data}
-                        margin={{
-                            top: 0,
-                            right: 20,
-                            bottom: 0,
-                            left: 20,
-                        }}
-                    >
+                    <ResponsiveContainer >
+                        <ComposedChart
+                            width={100}
+                            height={100}
+                            data={props.chart.data}
+                            margin={{
+                                top: 0,
+                                right: 20,
+                                bottom: 0,
+                                left: 20,
+                            }}
+                        >
                     
-                    <XAxis dataKey="name" scale="band" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="uv" barSize={20} fill="#413ea0" />
-                    <Line type="monotone" dataKey="uv" stroke="#ff7300" />
-                    </ComposedChart>
-                </ResponsiveContainer>
-            </div>
+                        <XAxis 
+                        dataKey="name" 
+                        scale="band" />
 
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        {props.chart.dataKeys.map((dataKey) => (
+                            <Area
+                                type="monotone"
+                                dataKey={dataKey.name}
+                                stroke={dataKey.color}
+                                fill="url(#areaGradient)"
+                            />
+                            
+                        ))}
+                        </ComposedChart>
+                    </ResponsiveContainer>
+                </div>
+            } 
         </div>
     <div className="activities">
         <h2> Purchase History </h2>

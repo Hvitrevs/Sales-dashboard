@@ -26,7 +26,7 @@ const BigChartBox = (props: Props) => {
       >
         <defs>
           <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#6464ff" />
+            <stop offset="0%" stopColor="#4a80ff" />
             <stop offset="100%" stopColor="#104237" stopOpacity={0} />
           </linearGradient>
         </defs>
@@ -38,7 +38,7 @@ const BigChartBox = (props: Props) => {
         </defs>
         <defs>
           <linearGradient id="areaGradient2" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#64ffe5" />
+            <stop offset="0%" stopColor="#39ffdb" />
             <stop offset="100%" stopColor="#104237" stopOpacity={0} />
           </linearGradient>
         </defs>
@@ -59,7 +59,7 @@ const BigChartBox = (props: Props) => {
                 />
         <Area type="monotone" dataKey="artworks" stackId="1" stroke="#7c76f5" fill="url(#areaGradient)" />
         <Area type="monotone" dataKey="posters" stackId="1" stroke="#f56ecd" fill="url(#areaGradient1)" />
-        <Area type="monotone" dataKey='stickers' stackId="1" stroke="#58fff1" fill="url(#areaGradient2)" />
+        <Area type="monotone" dataKey='stickers' stackId="1" stroke="#34ffd6" fill="url(#areaGradient2)" />
       </AreaChart>
     </ResponsiveContainer>
 
