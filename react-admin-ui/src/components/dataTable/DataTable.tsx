@@ -11,6 +11,22 @@ type Props ={
 
 
 const DataTable = (props:Props) => {
+
+
+    const queryClient = useQueryClient();
+
+    const mutation = useMutation({
+      mutationFn:(id:number) => {
+        return fetch(`http://localhost:8800/api/${slug}/${id}`, {
+          method: "delete",
+        });
+      },
+      onSuccess: () => {
+        
+      }
+    })
+
+
     
     const handleDelete =(id:number) => {
         console.log(id + "has been removed")
