@@ -22,9 +22,10 @@ const DataTable = (props:Props) => {
         });
       },
       onSuccess: () => {
-        
+        queryClient.invalidateQueries([`all${slug}`])
+
       }
-    })
+    });
 
 
     
