@@ -3,7 +3,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
 
 
         button{
@@ -31,8 +31,7 @@
     }
 
     button{         
-        padding: 5px;
-        gap:2px;
+        padding: 3px;
         cursor: pointer;
         border-radius: 10px;
         border-color:  hsl(166, 100%, 39%);

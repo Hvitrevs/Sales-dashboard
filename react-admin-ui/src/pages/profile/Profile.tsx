@@ -1,11 +1,13 @@
-import Single from "../../components/single/Single"
-import { adminPage } from "../../data"
+
+import Admin from "../../components/admin/Admin"
+
 import "./profile.scss"
+
 
 const Profile = () => {
   return (
     <div className="profile">
-        <Single {...adminPage} />
+        <Admin  />
     </div>
   )
 }

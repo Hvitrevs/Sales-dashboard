@@ -9,6 +9,8 @@
   scrollbar-width: none;
 
   
+
+  
   body::-webkit-scrollbar {
     display: none;
   }
@@ -17,13 +19,16 @@
 
 
 .body{
+  
+
+
+
   scrollbar-width: none;
 
   
   body::-webkit-scrollbar {
     display: none;
   }
-  height: 100vh;
 
   
 
@@ -39,6 +44,7 @@ a {
   font-family: "Inter", sans-serif;
   letter-spacing: 0.17rem;
   color: $main-color;
+  height: 100vh;
   
   
   // background-color: $main-bg;
@@ -49,6 +55,7 @@ a {
 
   background-image: url('./bg-img.svg');
   background-size: cover;
+  
   
 
 }
@@ -73,7 +80,7 @@ a {
   width: 200px;
   padding: 3px 20px;
   border-right: 2px solid  hsla(240, 24%, 37%, 0.157);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -81,4 +88,5 @@ a {
 .contentContainer {
   padding: 5px 20px;
   width: 100%;
+  margin-bottom: 1rem;
 }
