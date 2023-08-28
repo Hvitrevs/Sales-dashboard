@@ -70,7 +70,7 @@ const Users = () => {
     <div className="users">
       <div className="info">
         <h1>Users</h1>
-        <button onClick={() => setOpen(true)}> ADD </button>
+        <button className="button1" onClick={() => setOpen(true)}> ADD </button>
       </div>
       <DataTable slug="users" columns={columns} rows={userRows} />
        {/* {isLoading ? (
