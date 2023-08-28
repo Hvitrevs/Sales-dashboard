@@ -6,7 +6,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
+
   
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+
+.body{
+  height: 100vh;
+
   
 
 }
@@ -21,6 +33,7 @@ a {
   font-family: "Inter", sans-serif;
   letter-spacing: 0.17rem;
   color: $main-color;
+  
   
   // background-color: $main-bg;
   // background-image:
