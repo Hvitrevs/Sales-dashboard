@@ -67,12 +67,13 @@ function App() {
           path: "/products/:id",
           element: <Product />,
         },
+        {
+          path: "/login",
+          element: <Login />,
+        },
       ],
     },
-    {
-      path: "/login",
-      element: <Login />,
-    },
+
   ]);
 
   return <RouterProvider router={router} />;

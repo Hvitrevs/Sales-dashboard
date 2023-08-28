@@ -33,6 +33,12 @@ export const menu = [
           url: "/products",
           icon: "product.svg",
         },
+        {
+          id: 3,
+          title: "Login",
+          url: "/login",
+          icon: "backup.svg",
+        },
         // {
         //   id: 3,
         //   title: "Orders",
@@ -105,12 +111,12 @@ export const menu = [
     //       url: "/",
     //       icon: "chart.svg",
     //     },
-    //     {
-    //       id: 2,
-    //       title: "Logs",
-    //       url: "/",
-    //       icon: "log.svg",
-    //     },
+        // {
+        //   id: 2,
+        //   title: "Login",
+        //   url: "/login",
+        //   icon: "log.svg",
+        // },
     //   ],
     // },
   ];
