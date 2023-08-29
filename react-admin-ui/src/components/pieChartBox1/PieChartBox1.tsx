@@ -3,36 +3,36 @@ import "./pieChartBox1.scss";
 import { ResponsiveContainer, Pie, PieChart, Tooltip, Cell } from "recharts";
 
 const data = [
-  { name: "Mobile", value: 520, color: "url(#mobileGradient)" },
-  { name: "Desktop", value: 641, color: "url(#desktopGradient)" },
-  { name: "Laptop", value: 521, color: "url(#laptopGradient)" },
-  { name: "Tablet", value: 313, color: "url(#tabletGradient)" },
+  { name: "Week 1", value: 220, color: "url(#mobileGradient1)" },
+  { name: "Week 2", value: 541, color: "url(#desktopGradient1)" },
+  { name: "Week 3", value: 321, color: "url(#laptopGradient1)" },
+  { name: "week 4", value: 613, color: "url(#tabletGradient1)" },
 ];
 
 const PieChartBox1 = () => {
   return (
     <div className="pieChartBox1">
-      <h1>Leads by Device</h1>
+      <h1>Month Profit</h1>
       <div className="piechart">
-        <ResponsiveContainer width="99%" height={200}>
+        <ResponsiveContainer width="99%" height={300}>
           <PieChart>
             <defs>
               {/* Define linear gradients */}
-              <linearGradient id="mobileGradient" gradientTransform="rotate(0)">
-                <stop offset="0%" stopColor="#00fedc" />
-                <stop offset="100%" stopColor="#009df2" />
+              <linearGradient id="mobileGradient1" gradientTransform="rotate(0)">
+                <stop offset="0%" stopColor="#4423ff" />
+                <stop offset="100%" stopColor="#ff3780" />
               </linearGradient>
-              <linearGradient id="desktopGradient" gradientTransform="rotate(0)">
-                <stop offset="0%" stopColor="#9cff66" />
-                <stop offset="100%" stopColor="#00fedc" />
+              <linearGradient id="desktopGradient1" gradientTransform="rotate(0)">
+                <stop offset="0%" stopColor="#41ff87" />
+                <stop offset="100%" stopColor="#013bea" />
               </linearGradient>
-              <linearGradient id="laptopGradient" gradientTransform="rotate(0)">
-                <stop offset="0%" stopColor="#adff66" />
-                <stop offset="100%" stopColor="#ff7559" />
+              <linearGradient id="laptopGradient1" gradientTransform="rotate(0)">
+                <stop offset="0%" stopColor="#34ff67" />
+                <stop offset="100%" stopColor="#ffc400" />
               </linearGradient>
-              <linearGradient id="tabletGradient" gradientTransform="rotate(0)">
-                <stop offset="0%" stopColor="#fb4f4f" />
-                <stop offset="100%" stopColor="#008cfe" />
+              <linearGradient id="tabletGradient1" gradientTransform="rotate(0)">
+                <stop offset="0%" stopColor="#feb152" />
+                <stop offset="100%" stopColor="#ff3737" />
               </linearGradient>
             </defs>
             <Tooltip
