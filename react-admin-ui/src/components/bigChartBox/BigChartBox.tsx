@@ -26,19 +26,25 @@ const BigChartBox = (props: Props) => {
       >
         <defs>
           <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#4a80ff" />
+            <stop offset="0%" stopColor="#095bff" />
             <stop offset="100%" stopColor="#104237" stopOpacity={0} />
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="areaGradient1" x1="0" y1="0" x2="0" y2="2">
-            <stop offset="0%" stopColor="#e431eb" />
+            <stop offset="0%" stopColor="#ff02b7" />
             <stop offset="100%" stopColor="#104237" stopOpacity={0} />
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="areaGradient2" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#39ffdb" />
+            <stop offset="0%" stopColor="#0bff81" />
+            <stop offset="100%" stopColor="#104237" stopOpacity={0} />
+          </linearGradient>
+        </defs>
+        <defs>
+        <linearGradient id="areaGradient3" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#4583ff" />
             <stop offset="100%" stopColor="#104237" stopOpacity={0} />
           </linearGradient>
         </defs>

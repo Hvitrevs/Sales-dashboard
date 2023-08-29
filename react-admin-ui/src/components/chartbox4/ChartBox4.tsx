@@ -55,8 +55,23 @@ const chartBox4 = (props: Props) => {
                 position={{ x: 10, y: -75 }}
                 />
                 
-                <Area type="monotone" dataKey="artworks" fill="url(#areaGradient)" stroke="#84ced8" />
-                <Bar dataKey="posters" barSize={20} fill="url(#areaGradient)" />
+                <Area type="monotone" dataKey="artworks" fill="url(#areaGradient2)" stroke="#26e2fa" />
+                <Bar 
+                  dataKey="posters" 
+                  barSize={20} 
+                  shape={({ x, y, width, height }) => (
+                    <rect 
+                    x={x}
+                    y={y}
+                    width={width}
+                    height={height}
+                    rx={10} // You can adjust the corner radius as needed
+                    ry={10} 
+                    fill="url(#areaGradient3)"
+                    />
+                  )}
+                  fill="url(#areaGradient3)" 
+                />
                 <Line type="monotone" dataKey='stickers'stroke="#3bff63" />
               </ComposedChart>
             </ResponsiveContainer>

@@ -58,8 +58,8 @@ const ChartBox1 = (props: Props) => {
               y={y}
               width={width}
               height={height}
-              rx={7} // You can adjust the corner radius as needed
-              ry={7} // You can adjust the corner radius as needed
+              rx={10} // You can adjust the corner radius as needed
+              ry={10} // You can adjust the corner radius as needed
               fill="url(#gradient)"
             />
           )}
