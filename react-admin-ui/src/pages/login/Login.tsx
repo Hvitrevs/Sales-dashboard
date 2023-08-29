@@ -44,7 +44,7 @@ function Login() {
         <div className="login">
           <div className="layoutlogin">
 
-              <h1>Signup</h1>
+              <h1>Authorization</h1>
 
               <form className="formfield" action="POST">
                   <input className="forms" type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email"  />
@@ -61,7 +61,7 @@ function Login() {
               </span>
               <div className="adminLink">
 
-                  <Link to="/profile"> Get Back To Profile</Link>
+                  <Link to="/"> Get Back To Demo View</Link>
               </div>
               
           </div>

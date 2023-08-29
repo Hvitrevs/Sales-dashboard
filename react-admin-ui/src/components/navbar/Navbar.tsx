@@ -9,7 +9,7 @@ const Navbar = () => {
         <a href="/">DASHBOARD</a>
       </div>
       <div className='icons'>
-        <a href="/profile"><img src="/user.svg" alt='' className='icon'></img></a>
+        <a href="/login"><img src="/user.svg" alt='' className='icon'></img></a>
       </div>
     </div>
   );

@@ -43,6 +43,7 @@
         border-color:  transparent;
         padding: 20px;
         border-radius: 7px;
+        color: rgba(118, 253, 238, 0.55);
         
   
   
@@ -71,8 +72,23 @@
   
   
     }
+
+    .backlink{
+      margin-left: 3px;
+      padding: 3px;
+      display: flex;
+      font-size: small;
+      font-weight: 700;
+      color:rgba(98, 207, 174, 0.282);
+    }
   
     .adminLink {
+      margin-left: 3px;
+      padding: 3px;
+      display: flex;
+      font-size: small;
+      font-weight: 700;
+      color:rgba(243, 147, 138, 0.738);
   
   
     }

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Menu.scss";
 import { menu } from "../../data";
+import Login from "../../pages/login/Login";
 
 const Menu = () => {
   return (
@@ -12,6 +13,7 @@ const Menu = () => {
             <Link to={listItem.url} className="listItem" key={listItem.id}>
               <img src={listItem.icon} alt="" />
               <span className="listItemTitle">{listItem.title}</span>
+              
             </Link>
           ))}
         </div>

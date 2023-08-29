@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import "./add.scss";
 import { GridColDef } from "@mui/x-data-grid";
 
@@ -29,7 +30,11 @@ const Add = (props: Props) => {
                         <input type={column.type} placeholder={column.field} />
                     </div>
                 ))}
-                 <button onClick={() =>alert('This button is for display purpose only and has no actual file to store your data. Sorry :)')}> ADD </button>
+                <div className="buttonbug">
+                  <Link to="/login">
+                    <button onClick={() =>alert('Access denied: Only authorized users! Error: #034x8730x90uip239=8/')}> ADD </button>
+                  </Link>
+                 </div>
             </form>
         </div>
     </div>;
