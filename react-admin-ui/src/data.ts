@@ -323,20 +323,20 @@ export const menu = [
     {
       name: 'week 1',
       artworks: 4000,
-      stickers: 2400,
+      stickers: 3400,
       posters: 2400,
     },
     {
       name: 'week 2',
       artworks: 3000,
-      stickers: 1398,
-      posters: 2210,
+      stickers: 2398,
+      posters: 3210,
     },
     {
       name: 'week 3',
-      artworks: 2000,
-      stickers: 9800,
-      posters: 2290,
+      artworks: 3000,
+      stickers: 4800,
+      posters: 3290,
     },
     {
       name: 'week 4',
@@ -352,7 +352,7 @@ export const menu = [
     },
     {
       name: 'week 6',
-      artworks: 2390,
+      artworks: 3390,
       stickers: 3800,
       posters: 2500,
     },

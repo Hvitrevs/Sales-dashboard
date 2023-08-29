@@ -3,6 +3,7 @@ import BarChartBox1 from "../../components/barChartBox1/BarChartBox1"
 import BigChartBox from "../../components/bigChartBox/BigChartBox"
 import ChartBox2 from "../../components/chartbox2/ChartBox2"
 import ChartBox from "../../components/chartbox/ChartBox"
+import ChartBox4 from "../../components/chartbox4/ChartBox4"
 import ChartBox1 from "../../components/chartbox1/ChartBox1"
 import ChartBox3 from "../../components/chartbox3/ChartBox3"
 import PieChartBox1 from "../../components/pieChartBox1/PieChartBox1"
@@ -35,6 +36,7 @@ const Charts = () => {
 
 
       <div className="box box7"><BigChartBox {...bigChartBoxRevenue} /> </div>
+      
 
       <div className="box box8"><ChartBox1 {...chartBoxProduct} /></div>
 
@@ -45,7 +47,7 @@ const Charts = () => {
       <div className="box box9"><ChartBox {...chartBoxUser} /></div>
 
       <div className="box box7"><PieChartBox1 /> </div>
-      <div className="box box5"><ChartBox2 {... chartBoxRevenue}/></div>
+      <div className="box box5"><ChartBox4 {... bigChartBoxRevenue}/></div>
     </div>
   )
 }
