@@ -58,7 +58,7 @@ function Login() {
             <br />
             <div className="adminLink">
 
-              <Link to="/admin">Profile</Link>
+              <Link to="/profile">Profile</Link>
             </div>
           </div>
 
