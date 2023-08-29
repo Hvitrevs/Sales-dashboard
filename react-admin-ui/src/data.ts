@@ -1,7 +1,7 @@
 export const menu = [
     {
       id: 1,
-      title: "MAIN",
+      title: "",
       listItems: [
         {
           id: 1,
@@ -15,30 +15,32 @@ export const menu = [
         //   url: "/profile",
         //   icon: "user.svg",
         // },
-      ],
-    },
-    {
-      id: 2,
-      title: "LIST",
-      listItems: [
+
         {
-          id: 1,
+          id: 2,
           title: "Users",
           url: "/users",
           icon: "user.svg",
         },
         {
-          id: 2,
+          id: 3,
           title: "Products",
           url: "/products",
           icon: "product.svg",
         },
         {
-          id: 3,
+          id: 4,
+          title: "Charts",
+          url: "/chart",
+          icon: "chart.svg",
+        },
+        {
+          id: 5,
           title: "Login",
           url: "/login",
           icon: "backup.svg",
         },
+
         // {
         //   id: 3,
         //   title: "Orders",

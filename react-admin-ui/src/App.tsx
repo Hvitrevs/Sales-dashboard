@@ -14,6 +14,7 @@ import {
   QueryClientProvider,
 } from "@tanstack/react-query";
 import Profile from "./pages/profile/Profile";
+import Charts from "./pages/charts/Charts";
 
 
 const queryClient = new QueryClient();
@@ -58,6 +59,10 @@ function App() {
         {
           path: "/profile",
           element: <Profile />,
+        },
+        {
+          path: "/chart",
+          element: <Charts />,
         },
         {
           path: "/users/:id",

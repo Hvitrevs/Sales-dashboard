@@ -1,0 +1,41 @@
+.charts{    
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(180px, auto);
+        
+    
+        .box{
+            margin-top: 0.1rem;
+            padding: 2rem;
+            border-radius: 1rem;
+            background-image: linear-gradient(to bottom, hsla(240, 24%, 37%, 0.123),hsla(240, 30%, 17%, 0.056) );
+            opacity: 70%;
+    
+    
+            &:hover {
+                box-shadow: 0 0 20px hsla(164, 100%, 76%, 0.164);
+                opacity: 100%;
+    
+    
+                }
+        }
+    
+        .box1{
+            grid-column: span 1;
+            grid-row: span 3;
+        }
+    
+        .box4{
+            grid-column: span 1;
+            grid-row: span 3;
+        }
+    
+        .box7{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    
+        
+    
+}
