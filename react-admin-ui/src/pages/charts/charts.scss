@@ -1,7 +1,7 @@
 .charts{    
         display: grid;
         gap: 1rem;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 2fr);
         grid-auto-rows: minmax(180px, auto);
         
     
@@ -35,6 +35,19 @@
             grid-column: span 2;
             grid-row: span 2;
         }
+        .box5{
+          grid-column: span 1;
+          grid-row: span 2;
+
+          .title{
+            Link{
+              display: none
+            }
+
+          }
+
+
+      }
     
         
     

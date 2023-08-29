@@ -31,6 +31,9 @@ const Charts = () => {
       <ChartBox3 {... chartBoxConversion}/>
       </div> */}
 
+
+
+
       <div className="box box7"><BigChartBox {...bigChartBoxRevenue} /> </div>
 
       <div className="box box8"><ChartBox1 {...chartBoxProduct} /></div>
@@ -42,6 +45,7 @@ const Charts = () => {
       <div className="box box9"><ChartBox {...chartBoxUser} /></div>
 
       <div className="box box7"><PieChartBox1 /> </div>
+      <div className="box box5"><ChartBox2 {... chartBoxRevenue}/></div>
     </div>
   )
 }

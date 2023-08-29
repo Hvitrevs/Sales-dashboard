@@ -28,7 +28,7 @@ const chartBox2 = (props: Props) => {
       <div className="chartInfo">
         <div className="chart">
         
-          <ResponsiveContainer width="100%" height="100%">
+          <ResponsiveContainer width="99%" height="99%">
             <LineChart
               width={500}
               height={300}

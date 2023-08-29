@@ -3,10 +3,10 @@ import "./pieChartBox1.scss";
 import { ResponsiveContainer, Pie, PieChart, Tooltip, Cell } from "recharts";
 
 const data = [
-  { name: "Week 1", value: 220, color: "url(#mobileGradient1)" },
-  { name: "Week 2", value: 541, color: "url(#desktopGradient1)" },
-  { name: "Week 3", value: 321, color: "url(#laptopGradient1)" },
-  { name: "week 4", value: 613, color: "url(#tabletGradient1)" },
+  { name: "Week 1", value: 1220, color: "url(#mobileGradient1)" },
+  { name: "Week 2", value: 2541, color: "url(#desktopGradient1)" },
+  { name: "Week 3", value: 1321, color: "url(#laptopGradient1)" },
+  { name: "Week 4", value: 2613, color: "url(#tabletGradient1)" },
 ];
 
 const PieChartBox1 = () => {
@@ -26,8 +26,8 @@ const PieChartBox1 = () => {
                      
                           <li>
                             <div>
-                                {item.name}
-                                {item.value}
+                                <h1>{item.name}</h1>
+                                <h5>${item.value}</h5>
                             </div>
                           </li>
                       
@@ -38,7 +38,7 @@ const PieChartBox1 = () => {
             </div>
           
         </div>
-        <hr></hr>
+        
 
         <div className="piechart11">
          
