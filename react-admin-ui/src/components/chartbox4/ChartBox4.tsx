@@ -29,7 +29,7 @@ const chartBox4 = (props: Props) => {
       <div className="boxInfo">
         <div className="title">
         <img src='/chart.svg' alt='' />
-          <span>{props.title}</span>
+          <span>Sold By Unit</span>
         </div>
       </div>
       <div className="chartInfo">
