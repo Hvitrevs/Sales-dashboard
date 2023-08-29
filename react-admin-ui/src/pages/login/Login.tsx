@@ -61,7 +61,7 @@ function Login() {
               </span>
               <div className="adminLink">
 
-                  <Link to="/profile">Profile</Link>
+                  <Link to="/profile"> Get Back To Profile</Link>
               </div>
               
           </div>
