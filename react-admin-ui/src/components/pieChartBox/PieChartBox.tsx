@@ -3,10 +3,10 @@ import "./pieChartBox.scss";
 import { ResponsiveContainer, Pie, PieChart, Tooltip, Cell } from "recharts";
 
 const data = [
-  { name: "Mobile", value: 520, color: "url(#mobileGradient)" },
-  { name: "Desktop", value: 641, color: "url(#desktopGradient)" },
-  { name: "Laptop", value: 521, color: "url(#laptopGradient)" },
-  { name: "Tablet", value: 313, color: "url(#tabletGradient)" },
+  { name: "Mobile", value: 313, color: "url(#tabletGradient)" },
+  { name: "Desktop", value: 521, color: "url(#laptopGradient)" },
+  { name: "Laptop", value: 641, color: "url(#desktopGradient)" },
+  { name: "Tablet",value: 520, color: "url(#mobileGradient)" },
 ];
 
 const PieChartBox = () => {
@@ -19,20 +19,20 @@ const PieChartBox = () => {
             <defs>
               {/* Define linear gradients */}
               <linearGradient id="mobileGradient" gradientTransform="rotate(0)">
-                <stop offset="0%" stopColor="#00fedc" />
-                <stop offset="100%" stopColor="#009df2" />
+                <stop offset="0%" stopColor='hsl(211, 98.40%, 49.80%)' />
+                <stop offset="100%" stopColor="hsl(332, 100.00%, 50.00%)" />
               </linearGradient>
               <linearGradient id="desktopGradient" gradientTransform="rotate(0)">
-                <stop offset="0%" stopColor="#9cff66" />
-                <stop offset="100%" stopColor="#00fedc" />
+                <stop offset="0%" stopColor="hsl(87, 100.00%, 50.40%)" />
+                <stop offset="100%" stopColor="hsl(200, 100.00%, 50.00%)" />
               </linearGradient>
               <linearGradient id="laptopGradient" gradientTransform="rotate(0)">
-                <stop offset="0%" stopColor="#adff66" />
-                <stop offset="100%" stopColor="#ff7559" />
+                <stop offset="0%" stopColor="hsl(84, 100.00%, 50.40%)" />
+                <stop offset="100%" stopColor="hsla(23, 100.00%, 48.40%, 0.97)" />
               </linearGradient>
               <linearGradient id="tabletGradient" gradientTransform="rotate(0)">
-                <stop offset="0%" stopColor="#fb4f4f" />
-                <stop offset="100%" stopColor="#008cfe" />
+                <stop offset="0%" stopColor="hsla(15, 100.00%, 48.80%, 0.89)" />
+                <stop offset="100%" stopColor="hsla(349, 96.30%, 42.40%, 0.99)" />
               </linearGradient>
             </defs>
             <Tooltip
@@ -50,6 +50,8 @@ const PieChartBox = () => {
               outerRadius={"80%"}
               paddingAngle={3}
               dataKey="value"
+              stroke="none"
+              
             >
               {data.map((item) => (
                 <Cell key={item.name} fill={item.color} />

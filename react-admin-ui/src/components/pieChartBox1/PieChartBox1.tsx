@@ -78,6 +78,7 @@ const PieChartBox1 = () => {
                   outerRadius={"75%"}
                   paddingAngle={2}
                   dataKey="value"
+                  stroke="none"
                 >
                   
                   {data.map((item) => (
