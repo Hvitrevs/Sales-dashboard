@@ -44,23 +44,29 @@ function Login() {
         <div className="login">
           <div className="layoutlogin">
 
-            <h1>Signup</h1>
+              <h1>Signup</h1>
 
-            <form className="formfield" action="POST">
-                <input className="forms" type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email"  />
-                <input className="forms" type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password" />
-                <input className="button" type="submit" onClick={submit} />
+              <form className="formfield" action="POST">
+                  <input className="forms" type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email"  />
 
-            </form>
+                  <input className="forms" type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password" />
 
-            <br />
-            <p>OR</p>
-            <br />
-            <div className="adminLink">
+                  <input className="button" type="submit" onClick={submit} />
 
-              <Link to="/profile">Profile</Link>
-            </div>
+              </form>
+            
+
+              <span className="backlink">
+                <p>OR</p>
+              </span>
+              <div className="adminLink">
+
+                  <Link to="/profile">Profile</Link>
+              </div>
+              
           </div>
+          
+          
 
         </div>
     )
