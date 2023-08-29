@@ -36,7 +36,7 @@ const Charts = () => {
 
       <div className="box box9"><BarChartBox {...barChartBoxRevenue} /></div>
       
-      <div className="box box8"><ChartBox3 {...chartBoxConversion} /></div>
+      <div className="box box8"><ChartBox2 {...chartBoxConversion} /></div>
 
       <div className="box box9"><ChartBox {...chartBoxProduct} /></div>
 
