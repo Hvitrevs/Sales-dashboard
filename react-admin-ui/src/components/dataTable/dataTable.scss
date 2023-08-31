@@ -2,6 +2,9 @@
     padding: 0.5rem;
     width: 100%;
 
+
+
+
     .dataGrid {
       opacity: 70%;
       padding: 10px;
@@ -10,6 +13,10 @@
       border-radius: 1rem;
       border-color:  hsla(240, 24%, 37%, 0.153);
       color: rgba(209, 236, 236, 0.831);
+
+      & .MuiDataGrid-cell:focus{
+        outline: 'none';
+        }
 
       &:hover {
         box-shadow: 0 0 20px hsla(164, 100%, 76%, 0.164);
@@ -21,7 +28,6 @@
             border: none;
         }
 
-      /* Other styles */
   
       .MuiDataGrid-toolbarContainer {
         flex-direction: row-reverse;
