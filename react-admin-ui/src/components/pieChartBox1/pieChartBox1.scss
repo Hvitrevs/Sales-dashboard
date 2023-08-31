@@ -1,4 +1,4 @@
-
+@import "../../styles/responsive.scss";
 
 
 .pieChartBox1 {
@@ -19,6 +19,14 @@
       align-items: start;
       font-size: 24px;
       padding: 1rem;
+
+      @include md{
+        font-size: small;
+        align-items: center;
+        justify-content: center;
+
+  
+      }
     }
     
     .options {

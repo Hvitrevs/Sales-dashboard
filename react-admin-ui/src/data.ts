@@ -40,6 +40,12 @@ export const menu = [
           url: "/login",
           icon: "backup.svg",
         },
+        {
+          id: 5,
+          title: "Settings",
+          url: "/login",
+          icon: "setting.svg",
+        },
 
         // {
         //   id: 3,

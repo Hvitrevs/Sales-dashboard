@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import "../../styles/responsive.scss";
 
 
 
@@ -19,6 +20,11 @@
         font-size: 0.7rem;
         font-weight: 300;
         color: hsl(240, 22%, 60%);
+
+        @include lg{
+          display: none;
+
+        }
         
 
     }
@@ -36,6 +42,14 @@
             background-image: linear-gradient(to bottom, hsla(240, 24%, 37%, 0.15),hsla(240, 30%, 17%, 0.056) ) ;
 
         
+        }
+
+        .listItemTitle{
+          @include lg{
+            display: none;
+  
+          }
+          
         }
     }
 }

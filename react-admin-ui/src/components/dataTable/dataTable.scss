@@ -1,6 +1,11 @@
+@import "../../styles/responsive.scss";
+
 .dataTable {
     padding: 0.5rem;
     width: 100%;
+    @include md{
+      width: 85%;
+    }
 
 
 

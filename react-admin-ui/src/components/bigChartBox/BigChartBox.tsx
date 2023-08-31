@@ -12,7 +12,7 @@ const BigChartBox = (props: Props) => {
   return (
     <div className="bigChartBox">
         <h1>Revenue Analytics</h1>
-        <div className="chart">
+        <div className="chartt">
             
         <ResponsiveContainer width="99%" height="100%">
       <AreaChart
@@ -60,7 +60,7 @@ const BigChartBox = (props: Props) => {
                   
                   }}
                 labelStyle={{ display: "none", background:"transparent" }}
-                position={{ x: 80, y: 0 }}
+                position={{ x: 0, y: 0 }}
                 cursor={{fill:"none"}}
                 />
         <Area type="monotone" dataKey="artworks" stackId="1" stroke="#7c76f5" fill="url(#areaGradient)" />

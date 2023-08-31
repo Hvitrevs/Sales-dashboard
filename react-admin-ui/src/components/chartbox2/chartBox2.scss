@@ -1,5 +1,7 @@
+@import "../../styles/responsive.scss";
 
-.chartBox {
+
+.ChartBox {
     display: flex;
     height: 100%;
 
@@ -8,15 +10,31 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @include md{
+          gap: 10px;
+        }
 
         .title{
+            letter-spacing: 0.11rem;
+            font-size: 0.9rem;
             display: flex;
             align-items: center;
-            gap: 0.9rem;
+            gap: 0.3rem;
+
+            @include xxl{
+              font-size: 14px;
+            }
+        }
+
+        h1{
+          @include md{
+            font-size: 10px;
+          }
         }
     }
 
     .chartInfo{
+        font-size: 0.8rem;
         flex: 2;
         display: flex;
         flex-direction: column;
@@ -28,6 +46,16 @@
             width: 100%;
 
         }
+
+        .texts{
+            font-size: 0.8rem;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+
+
+        
     }
 
 
