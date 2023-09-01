@@ -35,17 +35,19 @@
         }
     }
 
+    @include xxl{
+      display: none;
+
+
+    }
+
     @include xl{
-      position: fixed;
-      background-image: url('./bg-img.svg');
-      background-size: cover;
+      display: none;
 
 
     }
     @include lg{
-      position: fixed;
-      background-image: url('./bg-img.svg');
-      background-size: cover;
+      display: none;
 
     }
     @include md{
