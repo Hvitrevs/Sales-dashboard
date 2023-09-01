@@ -12,9 +12,10 @@ const data = [
 const PieChartBox1 = () => {
   return (
     <div className="pieChartBox1">
-      <div className="content-text">
-      <h1> Monthly Profit</h1>
-            <div className="options">
+        <div className="content-text">
+          <h1> Monthly Profit</h1>
+          <div className="options">
+
               {data.map((item) => (
                 <div className="option" key={item.name}>
                   <div className="title">
@@ -35,7 +36,9 @@ const PieChartBox1 = () => {
                   </div>
                 </div>
               ))}
-            </div>
+
+
+          </div>
           
         </div>
         

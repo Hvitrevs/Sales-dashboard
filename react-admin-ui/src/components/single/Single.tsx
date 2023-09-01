@@ -1,4 +1,4 @@
-import { Area, Bar, ComposedChart, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
+import { Area,  ComposedChart, Legend,  ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
 import "./single.scss"
 
 type Props ={
@@ -48,12 +48,12 @@ const Single = (props: Props) => {
                                 left: 10,
                             }}
                         >
-                            <defs>
-          <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#4ae4ff" />
-            <stop offset="100%" stopColor="#104237" stopOpacity={0} />
-          </linearGradient>
-        </defs>
+            <defs>
+              <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#4ae4ff" />
+                <stop offset="100%" stopColor="#104237" stopOpacity={0} />
+              </linearGradient>
+            </defs>
                     
                         <XAxis 
                         dataKey="name" 

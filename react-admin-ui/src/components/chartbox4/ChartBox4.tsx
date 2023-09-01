@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 import './chartBox4.scss';
 import {
   ResponsiveContainer,
@@ -8,9 +8,7 @@ import {
   Bar,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
-  Legend,
 } from 'recharts';
 
 type Props = {

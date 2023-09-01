@@ -7,9 +7,35 @@
   flex-direction: row;
   justify-content: space-between;
 
+  @include md{
+    flex-direction: column-reverse;
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+
+
+  }
+  @include sm{
+    flex-direction: column-reverse;
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+
+
+  }
+
   .content-text{
     display: inline-block;
     align-items: start;
+
+    @include md{
+      min-width: 400px;
+      font-size: small;
+      
+    }
+
 
     
 
@@ -20,7 +46,7 @@
       font-size: 24px;
       padding: 1rem;
 
-      @include md{
+      @include lg{
         font-size: small;
         align-items: center;
         justify-content: center;
@@ -34,18 +60,23 @@
       justify-content: start;
       gap: 10px;
       font-size: 14px;
+
+
   
       .option {
         display: flex;
         flex-direction: row;
         gap: 10px;
         align-items: center;
+
+
+
   
         .title {
           display: flex;
           flex-direction: row;
-          gap: 10px;
-          align-items: start;
+          gap: 5px;
+          align-items: center;
 
           
 
@@ -86,9 +117,19 @@
                     border-radius: 15px;
                     background-color:rgba(255, 68, 87, 0.096);
 
+                    @include md{
+                      min-width: 350px;
+                    
+                    }
+
                     h1{
                         font-size: small;
                         margin-bottom: 5px;
+                        @include md{
+                          display: inline;
+                          font-size: x-small;
+                        
+                        }
                     }
 
                     h5{
@@ -98,28 +139,37 @@
                         opacity: 50%;
                         margin-bottom: 2px;
                         margin-top: -10px;
+
+                        @include md{
+                          font-size: x-small;
+                        
+                        }
                     }
                 }
             }
-        }
+          }
         }
       }
     }
   }
-  hr{
-  
-    
-  }
 
   .piechart11 {
     
-    margin-top: 1rem;
-    flex-direction: row-reverse;
-
     display: flex;
-    align-items: start;
-    width: 50%;
-    height: 50%;
-    
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  
+    @include md {
+      width: 70%;
+      max-width: 400px; 
+    }
+    @include sm{
+      min-width: 200px;
+      font-size: small;
+      
+    }
   }
-  }
+}
+

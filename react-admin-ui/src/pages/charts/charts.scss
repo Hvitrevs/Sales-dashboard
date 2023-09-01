@@ -1,8 +1,26 @@
+@import "../../styles/responsive.scss";
+
 .charts{    
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(4, 2fr);
         grid-auto-rows: minmax(180px, auto);
+        grid-auto-flow: dense; 
+
+        @include xl{
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @include lg{
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @include md{
+          grid-template-columns: repeat(1, 1fr);
+        }
+        @include sm{
+          grid-auto-rows: minmax(50px, auto);
+        }
+
+
         
     
         .box{
@@ -11,6 +29,13 @@
             border-radius: 1rem;
             background-image: linear-gradient(to bottom, hsla(240, 24%, 37%, 0.123),hsla(240, 30%, 17%, 0.056) );
             opacity: 70%;
+
+
+            @include md{
+              flex-direction: column;
+              width: 90%;
+              min-width: 390px;              
+            }
     
     
             &:hover {
@@ -24,30 +49,45 @@
         .box2{
             grid-column: span 1;
             grid-row: span 3;
+
+            @include md{
+              grid-row: span 1;
+            }
+        
         }
     
         .box6{
             grid-column: span 1;
             grid-row: span 3;
+
+            @include md{
+              grid-row: span 1;
+            }
+        
         }
     
         .box7{
             grid-column: span 2;
             grid-row: span 2;
+            @include md{
+              grid-column: span 1;
+              grid-row: span 1;
+            }
+        
         }
         .box5{
           grid-column: span 1;
           grid-row: span 2;
 
-          .title{
-            Link{
-              display: none
-            }
-
+          @include md{
+            grid-row: span 1;
           }
+      
+
+        }
 
 
-      }
+      
     
         
     

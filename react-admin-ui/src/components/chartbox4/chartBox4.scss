@@ -3,6 +3,7 @@
 
 .chartBox4 {
     display: flex;
+    flex-direction: column;
     height: 100%;
 
     .boxInfo{
@@ -14,21 +15,14 @@
           gap: 10px;
         }
 
-        .title{
-            letter-spacing: 0.11rem;
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-
-            @include xxl{
-              font-size: 14px;
-            }
-        }
-
-        h1{
-          @include md{
-            font-size: 10px;
+        .title {
+          font-size: 0.9rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        
+          @include xxl {
+            font-size: 14px;
           }
         }
     }
@@ -42,6 +36,7 @@
 
 
         .chart{
+
             height: 100%;
             width: 100%;
 
