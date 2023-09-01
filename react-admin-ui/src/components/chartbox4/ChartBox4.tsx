@@ -46,7 +46,12 @@ const chartBox4 = (props: Props) => {
               >
                 
                 <XAxis dataKey="name" scale="band" />
-                <YAxis />
+                <YAxis
+                   tick={{
+                     fontSize: 10, // Set the desired font size for the tick marks
+                    }}
+  
+                />
                 <Tooltip
                 contentStyle={{ background: "transparent", border: "none" }}
                 labelStyle={{ display: "none" }}

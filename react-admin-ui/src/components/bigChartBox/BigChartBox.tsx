@@ -1,4 +1,4 @@
-import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip,  YAxis } from "recharts"
+import { Area, AreaChart,  ResponsiveContainer, Tooltip,  YAxis } from "recharts"
 import "./bigChartBox.scss"
  
 type Props = {
@@ -49,7 +49,12 @@ const BigChartBox = (props: Props) => {
           </linearGradient>
         </defs>
 
-        <YAxis />
+        <YAxis
+          tick={{
+           fontSize: 10, // Set the desired font size for the tick marks
+         }}
+
+        />
     
         <Tooltip
                 contentStyle={{
