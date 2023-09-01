@@ -9,6 +9,7 @@ type Props ={
     columns: GridColDef[];
     rows: object[];
     slug: string;
+    
 }
 
 
@@ -34,7 +35,6 @@ const DataTable = (props:Props) => {
         <div className="dataTable">
           
           <DataGrid
-          //removes underline on dataTable when selected
         sx={{
           [`& .${gridClasses.cell}:focus, & .${gridClasses.cell}:focus-within`]: {
             outline: "none"
@@ -43,7 +43,7 @@ const DataTable = (props:Props) => {
             outline: "none"
           }
         }}
-        {...props.data}
+        // {...props.data}
             className="dataGrid"
             rows={props.rows}
             columns={[...props.columns, actionColumn]}

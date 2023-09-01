@@ -1,7 +1,7 @@
 
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import "./login.scss";
-import React, {  useState } from "react";
+import  {  useState } from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import axios from "axios";
 
@@ -15,6 +15,7 @@ function Login() {
 
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
+    {/* @ts-ignore   */}
 
     async function submit(e){
         e.preventDefault();

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Menu.scss";
 import { menu } from "../../data";
-import Login from "../../pages/login/Login";
+
 
 const Menu = () => {
   return (

@@ -17,23 +17,32 @@ const Home = () => {
       <div className="box box1">
         <TopBox />
         </div>
-      <div className="box box2"><ChartBox {...chartBoxUser}/></div>
-
+        
+      <div className="box box2">
+        {/* @ts-ignore   */}
+        <ChartBox {...chartBoxUser} />
+      </div>
       <div className="box box3"> 
+      {/* @ts-ignore   */}
       <ChartBox1 {... chartBoxRevenue} />
       </div>
       <div className="box box4"><PieChartBox /></div>
 
       <div className="box box5"> 
+      {/* @ts-ignore   */}
       <ChartBox2 {... chartBoxProduct}/>
       </div>
       <div className="box box6"> 
+      {/* @ts-ignore   */}
       <ChartBox3 {... chartBoxConversion}/>
       </div>
+      {/* @ts-ignore   */}
 
       <div className="box box7"><BigChartBox {...bigChartBoxRevenue} /> </div>
+      {/* @ts-ignore   */}
 
       <div className="box box8"><BarChartBox1 {...barChartBoxVisit} /></div>
+      
 
       <div className="box box9"><BarChartBox {...barChartBoxRevenue} /></div>
     </div>

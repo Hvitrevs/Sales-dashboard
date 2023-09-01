@@ -1,5 +1,5 @@
 
-import Admin from "../../components/admin/Admin"
+// import Admin from "../../components/admin/Admin"
 
 import "./profile.scss"
 
@@ -7,7 +7,7 @@ import "./profile.scss"
 const Profile = () => {
   return (
     <div className="profile">
-        <Admin  />
+        {/* <Admin  /> */}
     </div>
   )
 }
