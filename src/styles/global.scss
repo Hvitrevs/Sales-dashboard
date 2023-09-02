@@ -30,9 +30,12 @@ body {
   font-family: "Inter", sans-serif;
   letter-spacing: 0.17rem;
   color: $main-color;
+
   background-color: $main-bg;
-  background-image: url('./bg-img.svg');
-  background-size: cover;
+  // background-image: url('./bg-img.svg');
+  // background-size: cover;
+
+  
   height: 100vh;
 }
 
