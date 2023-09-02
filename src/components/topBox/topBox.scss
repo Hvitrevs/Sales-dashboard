@@ -2,15 +2,11 @@
 
 .topBox {
   @include md{
-    max-width: 400px;
-
-
-  }
-  @include sm{
     max-width: 200px;
 
 
   }
+
 
 
     h1{
@@ -38,6 +34,12 @@
                 background-image: linear-gradient(to bottom, hsla(240, 20%, 50%, 0.138),hsla(240, 30%, 17%, 0.056) ) ;
     
             
+            }
+
+            @include md{
+              min-width: 100px;
+          
+          
             }
 
 

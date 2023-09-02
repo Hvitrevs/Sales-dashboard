@@ -47,6 +47,7 @@
 
         @include md{
           grid-row: span 1;
+          min-width: 100px;
         }
     }
 

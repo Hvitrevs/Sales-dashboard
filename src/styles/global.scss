@@ -1,39 +1,23 @@
 @import "./variables.scss";
 @import "./responsive.scss";
 
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scrollbar-width: none;
-  
 
-  
-
-  
   body::-webkit-scrollbar {
     display: none;
   }
 }
 
-
-
-.body{
-  
-
-
-
+.body {
   scrollbar-width: none;
 
-  
   body::-webkit-scrollbar {
     display: none;
   }
-
-  
-
 }
 
 a {
@@ -41,58 +25,42 @@ a {
   color: inherit;
 }
 
-.main {
+body {
   font-size: 1rem;
   font-family: "Inter", sans-serif;
   letter-spacing: 0.17rem;
   color: $main-color;
-  height: 100vh;
-  
-  
   background-color: $main-bg;
-  // background-image:
-  //   radial-gradient(circle at bottom right,hsla(17, 71%, 20%, 0.623) ,30%, transparent),
-  //   radial-gradient(circle at top left,hsl(183, 61%, 15%) , transparent) ;
-
-
   background-image: url('./bg-img.svg');
   background-size: cover;
-  
-  
-
+  height: 100vh;
 }
 
 .container {
   display: flex;
 
-
-  @include xxl{
+  @include xxl {
     display: flex;
-    background-image: url('./bg-img.svg');
-    background-size: cover;
   }
-
-
-
 }
-
-
 
 .menuContainer {
   width: 200px;
   padding: 3px 20px;
-  border-right: 2px solid  hsla(240, 24%, 37%, 0.157);
+  border-right: 2px solid hsla(240, 24%, 37%, 0.157);
   margin-bottom: 2rem;
 
-  @include lg{
+  @include lg {
     width: max-content;
   }
-
 }
-
 
 .contentContainer {
   padding: 5px 20px;
   width: 100%;
   margin-bottom: 1rem;
+
+  @include md {
+    width: max-content;
+  }
 }
