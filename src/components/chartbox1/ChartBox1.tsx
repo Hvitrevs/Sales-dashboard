@@ -14,7 +14,7 @@ type Props = {
 
 const ChartBox1 = (props: Props) => {
   return (
-    <div className="chartBox">
+    <div className="chartBox1">
       <div className="boxInfo">
         <div className="title">
         <img src='/order.svg' alt='' />
