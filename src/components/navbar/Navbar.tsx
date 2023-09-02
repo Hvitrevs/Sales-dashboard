@@ -8,9 +8,6 @@ const Navbar = () => {
         <a className='line'>|I|</a>
         <a href="/">DASHBOARD</a>
       </div>
-      <div className='icons'>
-        <a href="/login"><img src="/user.svg" alt='' className='icon'></img></a>
-      </div>
     </div>
   );
 };

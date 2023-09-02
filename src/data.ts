@@ -34,18 +34,27 @@ export const menu = [
           url: "/chart",
           icon: "chart.svg",
         },
+
         {
           id: 5,
+          title: "Profile",
+          url: "/login",
+          icon: "element.svg",
+        },
+
+        {
+          id: 6,
           title: "Advanced",
           url: "/login",
           icon: "backup.svg",
         },
         {
-          id: 5,
+          id: 7,
           title: "Settings",
           url: "/login",
           icon: "setting.svg",
         },
+
 
         // {
         //   id: 3,
