@@ -5,10 +5,15 @@
     width: 100%;
 
     @include lg{
-      flex-direction: column;
-      gap: 15px;
-      width: 90%;
+      flex-direction: row;
+      width: 800px;
     }
+    @include md{
+      flex-direction: column;
+      
+    }
+
+
     
 
     display: flex;
@@ -27,6 +32,17 @@
         flex: 1;
         @include lg{
           width: 400px;
+          
+
+
+        }
+        @include md{
+          width: 500px;
+
+
+        }
+        @include sm{
+          width: 350px;
 
 
         }
@@ -139,11 +155,20 @@
     .activities{
 
       @include lg{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 15px;
+        width: 200px;
+
+      }
   
   
+      @include md{
+        width: 500px;
+
+
+      }
+      @include sm{
+        width: 350px;
+
+
       }
 
         flex: 1;
@@ -154,7 +179,7 @@
 
         ul{
           @include lg{
-            width: 90%;
+            width: 100px;
           }
             
             li{
@@ -179,7 +204,7 @@
                 div{
 
                   @include md{
-                    min-width: 400px;
+                    min-width: 300px;
                   }
                     min-width:480px ;
                     padding: 15px;
@@ -196,13 +221,6 @@
                         opacity: 50%;
                     }
                 }
-            }
-
-            @include lg{
-              width: 50vh;
-             
-              
-    
             }
         }
 

@@ -3,9 +3,17 @@
 .dataTable {
     padding: 0.5rem;
     width: 100%;
-    @include md{
-      width: 85%;
+
+    @include lg{
+      max-width: 850px;
     }
+    @include md{
+      max-width: 400px;
+    }
+    @include sm{
+      max-width: 340px;
+    }
+
 
 
 
@@ -41,6 +49,8 @@
       .css-wop1k0-MuiDataGrid-footerContainer {
         border: none;
       }
+
+
   
       img {
         width: 32px;
