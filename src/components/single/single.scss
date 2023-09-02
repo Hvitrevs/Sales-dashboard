@@ -6,7 +6,6 @@
 
     @include lg{
       flex-direction: row;
-      width: 800px;
     }
     @include md{
       flex-direction: column;
@@ -222,6 +221,7 @@
                     }
                 }
             }
+
         }
 
 
