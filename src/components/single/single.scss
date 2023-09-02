@@ -6,9 +6,16 @@
 
     @include lg{
       flex-direction: row;
+      width: 100vh;
     }
     @include md{
       flex-direction: column;
+      width: 30vh;
+      
+    }
+    @include sm{
+      flex-direction: column;
+      width: 10vh;
       
     }
 
