@@ -45,7 +45,7 @@ const PieChartBox1 = () => {
 
         <div className="piechart11">
          
-            <ResponsiveContainer width="99%" height={300}>
+            <ResponsiveContainer width="99%" height={330}>
               <PieChart>
                 <defs>
                   {/* Define linear gradients */}
@@ -78,7 +78,7 @@ const PieChartBox1 = () => {
                 <Pie
                   data={data}
                   innerRadius={"60%"}
-                  outerRadius={"75%"}
+                  outerRadius={"80%"}
                   paddingAngle={2}
                   dataKey="value"
                   stroke="none"

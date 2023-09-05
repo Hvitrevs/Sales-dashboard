@@ -33,12 +33,12 @@ const chartBox4 = (props: Props) => {
       <div className="chartInfo">
         <div className="chart">
         
-            <ResponsiveContainer width={300} height={200}>
+            <ResponsiveContainer width={300} height={150}>
               
               <ComposedChart 
                 data={props.chartData}    
                 margin={{
-                  top: 30,
+                  top: 0,
                   right: 0,
                   bottom: 0,
                   left: 0,
