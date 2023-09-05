@@ -32,6 +32,11 @@
       width: 80%;
       max-width: 700px; 
     }
+    @include xl {
+      flex-wrap: wrap;
+      width: 70%;
+      max-width: 500px; 
+    }
   }
 
   .options {
@@ -54,22 +59,25 @@
       justify-content: center;
 
       @include md{
+        display: flex;
         font-size: x-small;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
+        justify-content: start;
 
   
       }
 
       .title {
         display: flex;
+        flex-direction: column;
         gap: 10px;
         align-items: center;
 
         @include md{
-          font-size: x-small;
-
-    
+          gap: 5px;
+          font-size: 10px;
+          align-items: start;
+          justify-content: start;
         }
 
         .dot {

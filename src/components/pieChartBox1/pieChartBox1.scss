@@ -26,15 +26,25 @@
 
   }
 
+  @include xs{
+    flex-direction: column-reverse;
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+    max-width: 100px;
+    
+  }
+
   .content-text{
     display: inline-block;
     align-items: start;
 
     @include md{
-      min-width: 400px;
+      min-width: 170px;
       font-size: small;
       
     }
+    
 
 
     
@@ -70,6 +80,10 @@
         align-items: center;
         @include md{
           min-width: 220px;
+        
+        }
+        @include xs{
+          min-width: 120px;
         
         }
 
@@ -122,7 +136,7 @@
                     border-radius: 15px;
                     background-color:rgba(255, 68, 87, 0.096);
 
-                    @include md{
+                    @include xs{
                       min-width: 280px;
                     
                     }

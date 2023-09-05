@@ -36,9 +36,10 @@ body {
   
   height: 100vh;
 
-  @include lg {
+  @include xl {
     background-image: none;
     background-color: $main-bg;
+    
   }
 }
 
@@ -48,6 +49,9 @@ body {
   @include xxl {
     display: flex;
   }
+  @include xl {
+    width: max-content;
+  }
 }
 
 .menuContainer {
@@ -56,8 +60,9 @@ body {
   border-right: 2px solid hsla(240, 24%, 37%, 0.157);
   margin-bottom: 2rem;
 
-  @include lg {
+  @include xl {
     width: max-content;
+    flex-wrap: wrap;
   }
 }
 
@@ -66,7 +71,9 @@ body {
   width: 100%;
   margin-bottom: 1rem;
 
-  @include md {
+  @include xl {
     width: max-content;
+    flex-wrap: wrap;
   }
+
 }

@@ -11,6 +11,18 @@
         gap: 1rem;
         margin-bottom: 1rem;
         font-size: 0.9rem;
+        
+        @include md{
+          display: flex;
+          margin-left: -4px;
+
+        }
+        @include sm{
+          display: flex;
+
+        }
+
+
 
         
     }
@@ -21,8 +33,11 @@
         font-weight: 300;
         color: hsl(240, 22%, 60%);
 
-        @include lg{
-          display: none;
+        @include md{
+          display: flex;
+          font-size: 0.4rem;
+          font-weight: 300;
+          color: hsl(240, 22%, 60%);
 
         }
         
@@ -45,6 +60,8 @@
         }
 
         .listItemTitle{
+
+          
           @include lg{
             display: none;
   
