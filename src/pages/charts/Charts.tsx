@@ -52,7 +52,7 @@ import ChartBox2 from "../../components/chartbox2/ChartBox2"
 import ChartBox4 from "../../components/chartbox4/ChartBox4"
 import PieChartBox from "../../components/pieChartBox/PieChartBox"
 import PieChartBox1 from "../../components/pieChartBox1/PieChartBox1"
-import { barChartBoxRevenue, barChartBoxVisit, bigChartBoxRevenue, chartBoxConversion, chartBoxProduct, chartBoxRevenue, chartBoxUser } from "../../data"
+import { barChartBoxRevenue, barChartBoxVisit, bigChartBoxRevenue,  chartBoxProduct, chartBoxRevenue, chartBoxUser } from "../../data"
 import "./charts.scss"
 
 
