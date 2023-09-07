@@ -53,6 +53,12 @@ Viewing on smartphone
 
 ## Easy to install
 
+```
+
+npm start
+
+```
+
 
 
 
