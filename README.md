@@ -22,30 +22,23 @@ Recharts, MUI
 <details>
 
   
-  Viewing on desktop
+Viewing on desktop
 
 
-
-<img src="https://github.com/Hvitrevs/Weather-app-/assets/134542496/a1500d2b-0a46-46d6-9f4c-e4ce5377ad86" alt="alt text" width="900">
-
-<img src="https://github.com/Hvitrevs/Weather-app-/assets/134542496/ac6ee9de-59c8-4704-93ba-d172566c6180" alt="alt text" width="900">
+<img src="https://github.com/Hvitrevs/Sales-dashboard/assets/134542496/8a3bd53d-21f1-42a3-9c34-8a14c249793f" alt="alt text" width="900">
 
 
 Viewing on tablet
 
 
-<img src="https://github.com/Hvitrevs/Weather-app-/assets/134542496/43be513e-49ba-4102-8076-135f98d48cd5" alt="alt text" width="400">
+<img src="https://github.com/Hvitrevs/Sales-dashboard/assets/134542496/38bc5c76-d16c-40bb-925e-bf0f3e944956" alt="alt text" width="400">
 
-<img src="https://github.com/Hvitrevs/Weather-app-/assets/134542496/4772fa63-8583-4203-b45e-1b76e55ca135" alt="alt text" width="400">
 
 
 Viewing on smartphone
 
 
-<img src="https://github.com/Hvitrevs/Weather-app-/assets/134542496/43032d87-1422-4750-b514-3aa03ee6462f" alt="alt text" width="200">
-
-<img src="https://github.com/Hvitrevs/Weather-app-/assets/134542496/60493732-023d-420a-8a59-982ea6630f60" alt="alt text" width="200">
-
+<img src="https://github.com/Hvitrevs/Sales-dashboard/assets/134542496/06e856e2-9187-45a1-85cd-eeec52b0769e" alt="alt text" width="200">
 
 </details>
 
