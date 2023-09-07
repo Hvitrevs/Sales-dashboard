@@ -1,5 +1,7 @@
 # Sales-dashboard
 
+<img src="https://github.com/Hvitrevs/Sales-dashboard/assets/134542496/8a3bd53d-21f1-42a3-9c34-8a14c249793f" alt="alt text" width="700">
+
 
 ## Description
 Simple Front End Dashboard utilizing Recharts and local data.
